@@ -1,0 +1,56 @@
+@import "../../styles/styles.scss";
+
+.homepage-container {
+  .homepage-hero {
+    height: 90vh;
+    overflow: hidden;
+    .hero-statement {
+      padding: $buffer*10;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      .statement-text {
+        p {
+          &.text-main {
+            font-family: $primaryFont;
+            font-size: $fontSizeHero;
+            color: $secondaryColor;
+            transform: translateY(100%);
+            opacity: 0;
+            @include animation(1s, $easingCubic, $delay5, fadeInUp);
+            span {
+              display: block;
+              @include breakpoint(sm) {
+                display: inline-block;
+              }
+            }//span
+          }//text-main
+          &.text-cta {
+            font-family: $secondaryFont;
+            color: $primaryColor;
+            transform: translateY(100%);
+            opacity: 0;
+            @include animation(1s, $easingCubic, $delay6, fadeInUp);
+          }
+        }//p
+      }//statement-text
+    }//hero-statement
+    .hero-graphic {
+      background: $accentColorCream;
+      transform: translateX(100%);
+      @include animation(1s, $easingCubic, $delay3, slideInLeft);
+    }//hero-graphic
+  }//homepage-hero
+  .homepage-statement {
+    padding: $buffer*40 0;
+    background: $secondaryColor;
+    transform: translateY(100%);
+    @include animation(1s, $easingCubic, $delay1, slideInUp);
+    .statement-text {
+      font-family: $primaryFont;
+      font-size: $fontSizeHero;
+      color: $accentColorCream;
+      text-align: center;
+    }//statement-text
+  }//homepage-statement
+}//homepage-container

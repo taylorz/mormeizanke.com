@@ -1,11 +1,30 @@
 import React, { Component } from 'react';
-import './Homepage.scss'
+import Grid from '@material-ui/core/Grid';
+import './Homepage.scss';
+
+import PageContainer from '../../components/PageContainer/PageContainer';
 
 class Homepage extends Component {
   render() {
     return (
       <>
-        <div>Mormei</div>
+        <PageContainer className="homepage-container">
+          <Grid container className="homepage-hero">
+            <Grid item md={6} className="hero-statement">
+              <div className="statement-text">
+                <p className="text-main"><span className="line-1">I’m a purposeful writer who </span><span className="line-2">frames words into stories to </span><span className="line-3">create value and impact.</span></p>
+                <p className="text-cta">Learn more about me.</p>
+              </div>
+            </Grid>
+            <Grid item md={6} className="hero-graphic">
+            </Grid>
+          </Grid>
+          <Grid container className="homepage-statement" justify="center" alignItems="center">
+            <Grid item md={10} className="statement-text">
+              <p>I have created content for organizations like UBC Communications and Marketing, Prism International, and Iridia Medical.</p>
+            </Grid>
+          </Grid>
+        </PageContainer>
       </>
     );
   }
