@@ -4,7 +4,9 @@ import './Homepage.scss'
 class Homepage extends Component {
   render() {
     return (
-      <></>
+      <>
+        <div>Mormei</div>
+      </>
     );
   }
 }

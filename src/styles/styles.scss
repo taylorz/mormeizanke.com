@@ -1,0 +1,6 @@
+@import '/mixins.scss';
+@import '/variables.scss';
+
+body {
+  padding: $buffer*10
+}//body
