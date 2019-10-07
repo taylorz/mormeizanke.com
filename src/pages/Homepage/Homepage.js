@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import './Homepage.scss';
+import MormeiHeadshot from '../../assets/images/mormei-headshot-noise.png';
 
 import PageContainer from '../../components/PageContainer/PageContainer';
 
@@ -17,10 +18,13 @@ class Homepage extends Component {
               </div>
             </Grid>
             <Grid item md={6} className="hero-graphic">
+              <div className="graphic-headshot">
+                <img src={MormeiHeadshot}/>
+              </div>
             </Grid>
           </Grid>
           <Grid container className="homepage-statement" justify="center" alignItems="center">
-            <Grid item md={10} className="statement-text">
+            <Grid item md={5} className="statement-text">
               <p>I have created content for organizations like UBC Communications and Marketing, Prism International, and Iridia Medical.</p>
             </Grid>
           </Grid>

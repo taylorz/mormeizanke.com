@@ -9,7 +9,12 @@ $primaryFont:                        "DomaineDisplayNarrowTest-Regular", serif;
 $secondaryFont:                      "Atlas Grotesk", sans-serif;
 
 $fontSize:                           12px;
+$fontSizeStatement:                  $fontSize*3;
 $fontSizeHero:                       $fontSize*5;
+
+$lineHeight:                         20px;
+$lineHeightStatement:                $lineHeight*3;
+$lineHeightHero:                     $lineHeight*5;
 
 $timing:                             .25s;
 $easingCubic:                        cubic-bezier(0.77, 0, 0.175, 1);
