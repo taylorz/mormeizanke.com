@@ -44,8 +44,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        @include animation(1s, $easingCubic, $delay3, slideInLeft);
+        @include animation(1s, $easingCubic, $delay4, slideInLeft);
         img {
+          background: lighten($secondaryColor, 70%);
           width: 50%;
         }
       }//graphic-headshot

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import './Homepage.scss';
-import MormeiHeadshot from '../../assets/images/mormei-headshot-noise.png';
+import MormeiHeadshot from '../../assets/images/mormei-headshot-transparent.png';
 
 import PageContainer from '../../components/PageContainer/PageContainer';
+import WorkExcerpt from '../../components/WorkExcerpt/WorkExcerpt';
 
 class Homepage extends Component {
   render() {
@@ -24,10 +25,11 @@ class Homepage extends Component {
             </Grid>
           </Grid>
           <Grid container className="homepage-statement" justify="center" alignItems="center">
-            <Grid item md={5} className="statement-text">
+            <Grid item md={6} className="statement-text">
               <p>I have created content for organizations like UBC Communications and Marketing, Prism International, and Iridia Medical.</p>
             </Grid>
           </Grid>
+          <WorkExcerpt/>
         </PageContainer>
       </>
     );

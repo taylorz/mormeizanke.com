@@ -1,0 +1,19 @@
+@import "../../styles/styles.scss";
+
+.work-excerpt {
+  height: 90vh;
+  padding: $buffer*8;
+  .work-excerpt-wrapper {
+    height: 100%; width: 100%;
+    display: flex;
+    font-family: $secondaryFont;
+    .excerpt-titles {
+      .titles-title {
+      }//titles-title
+    }//excerpt-titles
+    .excerpt-linkto {}//excerpt-linkto
+    .excerpt-writing {
+    }//excerpt-writing
+    .excerpt-context {}//excerpt-excerpt
+  }//work-excerpt-wrapper
+}//work-excerpt

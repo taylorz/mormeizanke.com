@@ -8,11 +8,11 @@ $secondaryColor:                     #1E3F4F;
 $primaryFont:                        "DomaineDisplayNarrowTest-Regular", serif;
 $secondaryFont:                      "Atlas Grotesk", sans-serif;
 
-$fontSize:                           12px;
-$fontSizeStatement:                  $fontSize*3;
-$fontSizeHero:                       $fontSize*5;
+$fontSize:                           1vmin;
+$fontSizeStatement:                  $fontSize*4;
+$fontSizeHero:                       $fontSize*6;
 
-$lineHeight:                         20px;
+$lineHeight:                         2vmin;
 $lineHeightStatement:                $lineHeight*3;
 $lineHeightHero:                     $lineHeight*5;
 
