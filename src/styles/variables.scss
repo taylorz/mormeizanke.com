@@ -4,6 +4,7 @@ $bgColorLight:                       #fafafa;
 $accentColorCream:                   #FFF0E8;
 $primaryColor:                       #ECB7D9;
 $secondaryColor:                     #1E3F4F;
+$lightGray:                          #dddddd;
 
 $primaryFont:                        "DomaineDisplayNarrowTest-Regular", serif;
 $secondaryFont:                      "Atlas Grotesk", sans-serif;
@@ -30,3 +31,5 @@ $delay5:                             $delay1+$delay4;
 $delay6:                             $delay1+$delay5;
 $delay7:                             $delay1+$delay6;
 $delay8:                             $delay1+$delay7;
+
+$border:                             1px solid $lightGray;

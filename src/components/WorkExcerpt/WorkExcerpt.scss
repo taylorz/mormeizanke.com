@@ -1,19 +1,39 @@
 @import "../../styles/styles.scss";
 
 .work-excerpt {
-  height: 90vh;
-  padding: $buffer*8;
+  height: 100vh;
+  border-bottom: $border;
   .work-excerpt-wrapper {
     height: 100%; width: 100%;
-    display: flex;
     font-family: $secondaryFont;
+    padding: $buffer*10;
     .excerpt-titles {
-      .titles-title {
-      }//titles-title
+        line-height: $lineHeight;
+        color: $lightGray;
+        .titles-title {}//titles-title
+        .titles-published {
+          span {
+            font-style: italic;
+          }//span
+        }//titles-title
     }//excerpt-titles
     .excerpt-linkto {}//excerpt-linkto
     .excerpt-writing {
+      .excerpt-writing-wrapper {
+        .writing-copy {
+          font-size: $fontSizeStatement;
+          font-family: $primaryFont;
+          color: $secondaryColor;
+          padding: 0 $buffer*24;
+          border-right: $border;
+          border-left: $border;
+        }//writing-copy
+      }//excerpt-writing-wrapper
     }//excerpt-writing
-    .excerpt-context {}//excerpt-excerpt
+    .excerpt-context {
+      display: flex;
+      align-items: flex-end;
+      color: $lightGray;
+    }//excerpt-excerpt
   }//work-excerpt-wrapper
 }//work-excerpt

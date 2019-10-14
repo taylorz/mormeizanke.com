@@ -4,17 +4,36 @@ import './WorkExcerpt.scss'
 
 class WorkExcerpt extends Component {
   render() {
-    const { children, className } = this.props
+    const {
+      children,
+      className,
+      title,
+      publication,
+      datePublished,
+      statement,
+      excerpt,
+      marginNoteFirst,
+      marginNoteSecond,
+      marginNoteThird
+    } = this.props
     return (
       <div className={`work-excerpt ${className}`}>
         <Grid container className="work-excerpt-wrapper">
-          <Grid item md={6} className="excerpt-titles">
-            <p className="titles-title">The Sopron Story: Looking back 60 years later</p>
-            <p>UBC NOW • September 23, 2018</p>
+          <Grid item md={12} className="excerpt-titles">
+            <div className="titles-title">{title}</div>
+            <div className="titles-published">{publication} • <span>{datePublished}</span></div>
           </Grid>
-          <Grid item md={6} className="excerpt-linkto">2</Grid>
-          <Grid item md={12} className="excerpt-writing">2</Grid>
-          <Grid item md={6} className="excerpt-context">1</Grid>
+          <Grid item md={6} className="excerpt-linkto"></Grid>
+          <Grid item md={12} className="excerpt-writing">
+            <Grid container className="excerpt-writing-wrapper" justify="center" alignItems="center">
+              <Grid item md={7} className="writing-copy">
+                {excerpt}
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item md={3} className="excerpt-context">
+            <div>{statement}</div>
+          </Grid>
         </Grid>
       </div>
     );
