@@ -14,6 +14,7 @@
           &.text-main {
             font-family: $primaryFont;
             font-size: $fontSizeHero;
+            line-height: $lineHeightHero;
             color: $secondaryColor;
             transform: translateY(100%);
             opacity: 0;

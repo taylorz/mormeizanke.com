@@ -32,4 +32,5 @@ $delay6:                             $delay1+$delay5;
 $delay7:                             $delay1+$delay6;
 $delay8:                             $delay1+$delay7;
 
-$border:                             1px solid $lightGray;
+$borderGray:                         1px solid $lightGray;
+$borderGreen:                        1px solid $secondaryColor;

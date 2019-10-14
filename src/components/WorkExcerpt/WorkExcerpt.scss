@@ -1,7 +1,7 @@
 @import "../../styles/styles.scss";
 
 .work-excerpt {
-  border-bottom: $border;
+  border-bottom: $borderGray;
   height: 100vh;
   @include breakpoint(md) {
     height: inherit;
@@ -32,8 +32,8 @@
           font-family: $primaryFont;
           color: $secondaryColor;
           padding: 0 $buffer*24;
-          border-right: $border;
-          border-left: $border;
+          border-right: $borderGray;
+          border-left: $borderGray;
         }//writing-copy
       }//excerpt-writing-wrapper
     }//excerpt-writing
