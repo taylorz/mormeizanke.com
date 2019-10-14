@@ -1,14 +1,17 @@
 @import "../../styles/styles.scss";
 
 .work-excerpt {
-  height: 100vh;
   border-bottom: $border;
+  height: 100vh;
+  @include breakpoint(md) {
+    height: inherit;
+  }
   .work-excerpt-wrapper {
     height: 100%; width: 100%;
     font-family: $secondaryFont;
+    line-height: $lineHeight;
     padding: $buffer*10;
     .excerpt-titles {
-        line-height: $lineHeight;
         color: $lightGray;
         .titles-title {}//titles-title
         .titles-published {
@@ -19,9 +22,13 @@
     }//excerpt-titles
     .excerpt-linkto {}//excerpt-linkto
     .excerpt-writing {
+      @include breakpoint(md) {
+        margin: 10vh 0;
+      }
       .excerpt-writing-wrapper {
         .writing-copy {
           font-size: $fontSizeStatement;
+          line-height: $lineHeightStatement;
           font-family: $primaryFont;
           color: $secondaryColor;
           padding: 0 $buffer*24;

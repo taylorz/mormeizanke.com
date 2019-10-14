@@ -7,15 +7,15 @@ $secondaryColor:                     #1E3F4F;
 $lightGray:                          #dddddd;
 
 $primaryFont:                        "DomaineDisplayNarrowTest-Regular", serif;
-$secondaryFont:                      "Atlas Grotesk", sans-serif;
+$secondaryFont:                      "Roboto", sans-serif;
 
 $fontSize:                           1vmin;
 $fontSizeStatement:                  $fontSize*4;
 $fontSizeHero:                       $fontSize*6;
 
-$lineHeight:                         2vmin;
-$lineHeightStatement:                $lineHeight*3;
-$lineHeightHero:                     $lineHeight*5;
+$lineHeight:                         2.5vmin;
+$lineHeightStatement:                $lineHeight*2;
+$lineHeightHero:                     $lineHeight*3;
 
 $timing:                             .25s;
 $easingCubic:                        cubic-bezier(0.77, 0, 0.175, 1);
