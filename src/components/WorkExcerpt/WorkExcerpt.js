@@ -26,7 +26,7 @@ class WorkExcerpt extends Component {
           <Grid item md={6} className="excerpt-linkto"></Grid>
           <Grid item md={12} className="excerpt-writing">
             <Grid container className="excerpt-writing-wrapper" justify="center" alignItems="center">
-              <Grid item md={12} lg={7} className="writing-copy">
+              <Grid item md={12} lg={10} className="writing-copy">
                 {excerpt}
               </Grid>
             </Grid>

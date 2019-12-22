@@ -1,8 +1,8 @@
 @import "../../styles/styles.scss";
 
 .work-excerpt {
-  border-bottom: $borderGray;
-  height: 100vh;
+  // border-bottom: $borderGray;
+  height: 80vh;
   @include breakpoint(md) {
     height: inherit;
   }
@@ -12,6 +12,7 @@
     line-height: $lineHeight;
     padding: $buffer*10;
     .excerpt-titles {
+        text-align: center;
         color: $lightGray;
         .titles-title {}//titles-title
         .titles-published {
@@ -34,7 +35,17 @@
           padding: 0 $buffer*24;
           border-right: $borderGray;
           border-left: $borderGray;
+          @include transitionRegular;
         }//writing-copy
+        &:hover {
+          cursor: pointer;
+          .writing-copy {
+              color: $primaryColor;
+              border-right: 1px solid $secondaryColor;
+              border-left: 1px solid $secondaryColor;
+              @include transitionRegular;
+          }
+        }
       }//excerpt-writing-wrapper
     }//excerpt-writing
     .excerpt-context {

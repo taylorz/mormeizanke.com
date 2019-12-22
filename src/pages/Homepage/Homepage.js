@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import './Homepage.scss';
-import MormeiHeadshot from '../../assets/images/mormei-headshot-transparent.png';
+import MormeiHeadshot from '../../assets/images/mormei-test.png';
 
 import PageContainer from '../../components/PageContainer/PageContainer';
 import WorkExcerpt from '../../components/WorkExcerpt/WorkExcerpt';
@@ -13,11 +13,20 @@ class Homepage extends Component {
     return (
       <>
         <PageContainer className="homepage-container">
+          <div className="header">
+            <div className="header-home">
+              <a href="/">Mormei Zanke</a>
+            </div>
+            <div className="header-links">
+              <a href="/">Writing</a>
+              <a href="/">About Me</a>
+            </div>
+          </div>
           <Grid container className="homepage-hero">
             <Grid item md={6} className="hero-statement">
               <div className="statement-text">
-                <p className="text-main"><span className="line-1">I’m a purposeful writer who </span><span className="line-2">frames words into stories to </span><span className="line-3">create value and impact.</span></p>
-                <p className="text-cta">Learn more about me.</p>
+                <p className="text-main">Mormei is a Canadian writer of poetry and essays.</p>
+                {/*<p className="text-cta"></p>*/}
               </div>
             </Grid>
             <Grid item md={6} className="hero-graphic">
@@ -27,8 +36,8 @@ class Homepage extends Component {
             </Grid>
           </Grid>
           <Grid container className="homepage-statement" justify="center" alignItems="center">
-            <Grid item md={6} className="statement-text">
-              <p>I have created content for organizations like UBC Communications and Marketing, Prism International, and Iridia Medical.</p>
+            <Grid item md={8} className="statement-text">
+              <p>As a storyteller she is compelled by the power of language whether that be in journalism, academia, or advertisement copy. Mormei has work experience as a copywriter, editor, digital content creator, project coordinator, and English language teacher.</p>
             </Grid>
           </Grid>
           { EXCERPTS.map((excerpt) =>
@@ -36,11 +45,8 @@ class Homepage extends Component {
                 title={excerpt.title}
                 publication={excerpt.publication}
                 datePublished={excerpt.datePublished}
-                statement={excerpt.statement}
+
                 excerpt={excerpt.excerpt}
-                marginNoteFirst={excerpt.marginNotes.first}
-                marginNoteSecond={excerpt.marginNotes.second}
-                marginNoteThird={excerpt.marginNotes.third}
               />
             )
           }

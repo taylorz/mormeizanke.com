@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>ReDO—Real Estate Development Optimization</title>
+    <!-- Bootstrap core CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/global.min.css"/>
+    <script type="text/javascript" src ="js/global.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6"><a class="navbar-brand" href="#">ReDO</a></div>
+          <div class="col-6 text-right flex-last"><button type="button" class="btn btn-primary btn-sm pull-right" id="updates">Updates</button></div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="hero">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-center">
+              <h6 id="statement">Your next development</h6>
+              <h1 id="tagline">Visualized. Simplified. Customized.</h1>
+              <!-- <p id="substatement">The best cost saving, accuracy improving, fitness identifying, team oriented pre-acquisition software you’ve never used.</p> -->
+              <button type="button" class="btn btn-primary" id="updates2">Get Updates</button>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-md-12 text-center case-study-carrot">
+            <p><span><a class="linkTo" href="#" data-target="geometric">111 Washington Street, New York City</a></span></p>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <section class="featureSection" id="algorithmic">
+      <div class="container-fluid"> 
+        <div class="row features">
+          <div class="col-md-6 featureLeft featureText">
+            <div class="featureTextCenter">
+              <p>Algorithmic Inputs</p>
+              <h1>Be Confident about core assumptions on any site.</h1>
+            </div>
+          </div>
+          <div class="col-md-6 featureRight featureImage">
+            <div class="featured-img"></div>
+          </div>
+        </div>
+        <div class="row featuresDetails">
+          <div class="col-lg-2 detailsItem"><p>Property Square Feet</p><h3>11, 208</h3></div>
+          <div class="col-lg-2 detailsItem"><p>Zoning</p><h3>C6-9</h3></div>
+          <div class="col-lg-2 detailsItem"><p>Commercial FAR</p><h3>15</h3></div>
+          <div class="col-lg-2 detailsItem"><p>Residential FAR</p><h3>10</h3></div>
+          <div class="col-lg-2 detailsItem"><p>Total GSF</p><h3>304,526</h3></div>
+          <div class="col-lg-2 detailsItem"><p>Absorption</p><h3>35%</h3></div>
+        </div>
+      </div>
+    </section>
+    <section class="featureSection" id="geometric">
+      <div class="container-fluid">
+        <div class="row features">
+          <div class="col-md-6 featureLeft featureImage">
+            <div class="featured-img"></div>
+          </div>
+          <div class="col-md-6 featureRight featureText">
+            <div class="featureTextCenter">
+              <p>Parametrically Defined Geometry</p>
+              <h1>Visualize site specific, as-of-right geometry from the start.</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="featureSection" id="output">
+      <div class="container-fluid">
+        <div class="row features">
+          <div class="col-md-6 featureLeft featureText">
+            <div class="featureTextCenter">
+              <p>Unique Output Solutions</p>
+              <h1>Recieve optimized solutions for different development types.</h1>
+            </div>
+          </div>
+          <div class="col-md-6 featureRight featureImage">
+            <div id="peak" class="featured-img">
+              <div class="featured-img-overlay">
+                <div class="overlay-top">
+                  <div class="row outputToggle">
+                    <ul id="toggleButtons">
+                        <li data-id="peak" data-return="25"class="toggleItem toggleActive">Peak</li>
+                        <li data-id="balanced" data-return="50" class="toggleItem toggleInactive">Balanced</li>
+                        <li data-id="optComm" data-return="75" class="toggleItem toggleInactive">Optimal Commercial</li>
+                        <li data-id="optResi" data-return="100" class="toggleItem toggleInactive">Optimal Residential</li>
+                    </ul>
+                  </div>
+                  <div class="row metric-example"><p><span id="peak" class="metricItem">25</span>% IRR</p></div>
+                </div>
+                <div class="overlay-bottom">
+                  <div class="row legend">
+                    <ul>
+                      <li id="retail">Retail</li>
+                      <li id="condo">Condominium</li>
+                      <li id="resi">Residentail Rental</li>
+                      <li id="office">Office</li>
+                      <li id="hotel">Hotel</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="app">
+      <div class="container-fluid">
+        <div class="row appSection">
+          <div class="col-md-8 offset-md-4">
+            <div class="screenTitle">
+              <p>Project Level Assumptions</p>
+              <h3>Save core assumptions like Debt to Equity ratios or Costs and use them over and over throughtout your project.</h3>
+            </div>
+            <div class="screenImg"><img src="assets/imgs/app/firm.png"></div>
+          </div>
+        </div><!--appSection-->
+        <div class="row appSection">
+          <div class="col-md-8">
+            <div class="screenTitle">
+              <p>Responsive Team Building</p>
+              <h3>Know who is sizing up which deals and track their progress.</h3>
+            </div>
+            <div class="screenImg"><img src="assets/imgs/app/team.png"></div>
+          </div>
+        </div><!--appSection-->
+        <div class="row appSection">
+          <div class="col-md-8 offset-md-4">
+            <div class="screenTitle">
+              <p>Presentation Ready</p>
+              <h3>Send your findings to investors, clients, colleagues from the same page you work on.</h3>
+            </div>
+            <div class="screenImg"><img src="assets/imgs/app/project.png"></div>
+          </div>
+        </div><!--appSection-->
+      </div>
+    </section>
+    <section id="heroBottom">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-center">
+              <h6 id="statement">Your next development</h6>
+              <h1 id="tagline">Visualized. Simplified. Customized.</h1>
+              <!-- <p id="substatement">The best cost saving, accuracy improving, fitness identifying, team oriented pre-acquisition software you’ve never used.</p> -->
+              <button type="button" class="btn btn-primary" id="updates3">Get Updates</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center case-study-carrot">
+            <p><span><a class="linkTo" href="#" data-target="geometric">Back to top</a></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!--mailchimp embed-->
+    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">function showMailingPopUp() {
+     require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"706e00647ebc20d1520443279","lid":"cbcdeca453"}) })
+     document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+ };
+ document.getElementById("updates").onclick = function() {showMailingPopUp()};
+ document.getElementById("updates2").onclick = function() {showMailingPopUp()};
+ document.getElementById("updates3").onclick = function() {showMailingPopUp()};</script>
+
+  </body>
+
+</html>

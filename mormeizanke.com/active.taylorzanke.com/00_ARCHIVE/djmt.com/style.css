@@ -1,0 +1,29 @@
+body {
+  font-family: "Inconsolata";
+  font-size: 14px;
+  line-height: 16px; }
+  body div.recieptWrapper {
+    width: 300px;
+    margin: 75px 0 75px 0; }
+    body div.recieptWrapper hr.style1 {
+      padding: 1px;
+      border: 0px #fff;
+      border-top: dashed 1px;
+      border-bottom: dashed 1px; }
+    body div.recieptWrapper hr.style2 {
+      border-top: dotted 2px;
+      border-bottom: none; }
+    body div.recieptWrapper hr.style3 {
+      border-top: solid 1px #000;
+      border-bottom: none; }
+    body div.recieptWrapper div.center {
+      text-align: center; }
+    body div.recieptWrapper div.left {
+      margin-bottom: 16px;
+      text-align: left;
+      float: left; }
+    body div.recieptWrapper div.right {
+      margin-bottom: 16px;
+      text-align: right; }
+
+/*# sourceMappingURL=style.css.map */

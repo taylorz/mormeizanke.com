@@ -1,0 +1,49 @@
+$text-size: 14px;
+$line-height: 16px;
+
+body {
+	font-family: "Inconsolata";
+	font-size: $text-size;
+	line-height: $line-height;
+
+
+	div.recieptWrapper {
+		width: 300px;
+		margin: 75px 0 75px 0;
+		section {
+		}
+		hr.style1 {
+			padding: 1px;
+			border: 0px #fff;
+			border-top: dashed 1px;
+			border-bottom: dashed 1px;
+		}
+		hr.style2 {
+			border-top: dotted 2px;
+			border-bottom: none;
+		}
+		hr.style3 {
+			border-top: solid 1px #000;
+			border-bottom: none;
+		}
+		div.center {
+			text-align: center;
+		}
+		div.left {
+			margin-bottom: $line-height;
+			text-align: left;
+			float: left;
+		}
+		div.right {
+			margin-bottom: $line-height;
+			text-align: right;
+		}
+	}
+}
+
+@media only screen and (max-device-width: 480px) {
+	div.recieptWrapper {
+		// min-width: 100% !important;
+		// margin-top: 0 !important;
+	}
+}

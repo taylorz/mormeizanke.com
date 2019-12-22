@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DJMT</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body onload="startTime()">
+    	<div class="recieptWrapper">
+    		<section class="header">
+    			<hr class="style1">
+				<div class="center">
+					HTTPS://WWW.DJMT.COM <br>
+					NEWARK <br>
+					NJ <br>
+					123456-0001 <br>
+					0987654321
+				</div>
+				<div class="left">
+					<script type="text/javascript">var today = new Date();
+						var dd = today.getDate();
+						var mm = today.getMonth()+1; //January is 0!
+						var yyyy = today.getFullYear();
+
+						if(dd<10) {
+						    dd = '0'+dd
+						} 
+
+						if(mm<10) {
+						    mm = '0'+mm
+						} 
+
+						today = mm + '/' + dd + '/' + yyyy;
+						document.write(today);
+					</script>
+				</div>
+				<div class="right">
+					<script>
+						function startTime() {
+						    var today = new Date();
+						    var h = today.getHours();
+						    var m = today.getMinutes();
+						    var s = today.getSeconds();
+						    m = checkTime(m);
+						    s = checkTime(s);
+						    document.getElementById('time').innerHTML =
+						    h + ":" + m + ":" + s;
+						    var t = setTimeout(startTime, 500);
+						}
+						function checkTime(i) {
+						    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+						    return i;
+						}
+					</script>
+					<div id="time"></div>
+				</div>
+    		</section>
+    		<section class="description">
+				<hr class="style1"><hr class="style1">
+				<div class="left">We are interested in the transaction not only as an agreement about a thing's value, but also as a conceptual undertaking towards participation and enagement. The transaction often reveals something about a deeper material manifestation: a cheeseburger, a car, a building. We are interested in contributing to, and taking part in, the relationshps that emerge out of this reality.</div>
+				<div class="left">Written On: 11/29/2017</div>
+				<div class="right">10:58 AM</div>
+    		</section>
+    		<section class="about">
+    			<hr class="style2">
+    			<div class="center">:) :/ :o :(</div>
+    			<hr class="style2">
+    			<div class="left">Written By:</div>
+    			<div class="right">
+    				DA YING
+    			</div>
+    			<div class="left">
+    				Committed to a multidisciplinary practice, Da has worked with the National Housing Projects Foundation to acquire and rehab affordable housing projects and with MAD New York to adapt historical Manhattan brownstones into luxury apartments. Da also holds a keen interest in education, and has served both as TA for the GSAPP Technology Sequence and as a guest critic for Advanced Studio.
+    			</div>
+    			<div class="left">Written By:</div>
+    			<div class="right">
+    				JACK TAO
+    			</div>
+    			<div class="left">
+    				Jack is a multi-disciplinary design professional in the field of architecture, real estate development, and urban planning; he holds a Master of Architecture degree and a Master of Real Estate Development degree from Columbia University’s Graduate School of Architecture, Planning, and Preservation. He also has experience working as an architectural designer and project manager in New York City on residential projects from single family to affordable housing developments.
+    			</div>
+    			<div class="left">Written By:</div>
+    			<div class="right">
+    				MATT LOHRY
+    			</div>
+    			<div class="left">
+    				Matt Lohry holds a Masters of Architecture from Columbia University GSAPP. He has worked on various real estate, urban and interior design projects in New York City, Hudson Valley and Catskill regions since 2012. He was awarded a Tamer Center Fellowship from the Columbia Business School in 2016 and was selected as a finalist for the HUD innovation in affordable housing national competition in 2017. His primary interest in alternative housing development and decentralized infrastructure has led him to develop projects in Copenhagen, Denmark, Berlin, Germany and Ap Don Vietnam.
+    			</div>
+    			<div class="left">Written By:</div>
+    			<div class="right">
+    				TAYLOR ZANKE
+    			</div>
+    			<div class="left">
+    				Taylor is a designer working in New York City with a broad range of technical, material, and disciplinary understanding. In addition to experience working as an architectural designer on interior renovation projects in Brooklyn, and serving in several teaching appointments at Barnard College, he has over 5 years of experience fulfilling interaction, print, and digital product design projects.
+    			</div>
+    		</section>
+            <section class="contact">
+                *******************************************
+                <div class="center">CONTACT US</div>
+                <div class="left">mail @ djmt (dot) com <br> 1-917-000-0000</div>
+                *******************************************
+            </section>
+            <section class="bottom">
+                <div class="left"><br>Thanks for looking.</div>
+            </section>
+    	</div>
+    </body>
+</html>

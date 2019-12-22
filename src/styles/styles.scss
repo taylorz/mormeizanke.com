@@ -16,4 +16,14 @@
 body {
   background: $bgColorLight;
   margin: 0; padding: 0;
+  a {
+    text-decoration: none;
+    &:link {color: inherit;}
+    &:visited {color: inherit;}
+    &:hover {
+      color: inherit;
+      cursor: pointer;
+    }
+    &:active {color: inherit;}
+  }
 }//body
