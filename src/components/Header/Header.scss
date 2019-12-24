@@ -1,0 +1,27 @@
+@import "../../styles/styles.scss";
+
+.header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  padding: $buffer*10;
+  font-family: $secondaryFont;
+  color: $primaryColor;
+  font-size: $fontSizeParagraph;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  opacity: 0;
+  @include animation(1s, $easingCubic, $delay5, fadeInUp);
+  .header-home {}
+  .header-links {
+    font-size: $fontSizeParagraph;
+    a {
+      margin-left: $buffer*10;
+      @include transitionCubic;
+      &:hover {
+        color: darken($primaryColor, 10%);
+        @include transitionCubic;
+      }
+    }
+  }
+}//header

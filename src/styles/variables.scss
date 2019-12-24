@@ -9,13 +9,15 @@ $lightGray:                          #dddddd;
 $primaryFont:                        "DomaineDisplayNarrowTest-Regular", serif;
 $secondaryFont:                      "Neuzeit Grotesk", sans-serif;
 
-$fontSize:                           1vmin;
-$fontSizeStatement:                  $fontSize*4;
-$fontSizeHero:                       $fontSize*6;
+$fontSize:                           14px;
+$fontSizeParagraph:                  $fontSize*1.15;
+$fontSizeStatement:                  $fontSize*2.5;
+$fontSizeHero:                       $fontSize*4;
 
-$lineHeight:                         2.5vmin;
-$lineHeightStatement:                $lineHeight*2;
-$lineHeightHero:                     $lineHeight*3;
+$lineHeight:                         16px;
+$lineHeightParagraph:                $lineHeight*1.15;
+$lineHeightStatement:                $lineHeight*2.5;
+$lineHeightHero:                     $lineHeight*4;
 
 $timing:                             .25s;
 $easingCubic:                        cubic-bezier(0.77, 0, 0.175, 1);

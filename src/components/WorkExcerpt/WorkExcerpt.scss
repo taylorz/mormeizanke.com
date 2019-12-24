@@ -2,7 +2,7 @@
 
 .work-excerpt {
   // border-bottom: $borderGray;
-  height: 80vh;
+  // height: 80vh;
   @include breakpoint(md) {
     height: inherit;
   }
@@ -31,21 +31,21 @@
           font-size: $fontSizeStatement;
           line-height: $lineHeightStatement;
           font-family: $primaryFont;
-          color: $secondaryColor;
+          color: $bgColorLight;
           padding: 0 $buffer*24;
-          border-right: $borderGray;
-          border-left: $borderGray;
+          border-right: 1px solid darken($secondaryColor, 10%);
+          border-left: 1px solid darken($secondaryColor, 10%);
           @include transitionRegular;
         }//writing-copy
-        &:hover {
-          cursor: pointer;
-          .writing-copy {
-              color: $primaryColor;
-              border-right: 1px solid $secondaryColor;
-              border-left: 1px solid $secondaryColor;
-              @include transitionRegular;
-          }
-        }
+        // &:hover {
+        //   cursor: pointer;
+        //   .writing-copy {
+        //       color: $primaryColor;
+        //       border-right: $borderGray;
+        //       border-left: $borderGray;
+        //       @include transitionRegular;
+        //   }
+        // }
       }//excerpt-writing-wrapper
     }//excerpt-writing
     .excerpt-context {
