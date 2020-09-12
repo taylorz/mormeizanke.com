@@ -7,6 +7,8 @@ import PageContainer from '../../components/PageContainer/PageContainer';
 import WorkExcerpt from '../../components/WorkExcerpt/WorkExcerpt';
 import Header from '../../components/Header/Header';
 
+import { MdArrowForward } from 'react-icons/md';
+
 import EXCERPTS from '../../constants/excerpts';
 
 class Homepage extends Component {
@@ -15,10 +17,10 @@ class Homepage extends Component {
       <>
         <PageContainer className="homepage-container">
           <Header/>
-          <Grid container className="homepage-hero">
+          <Grid container className="homepage-hero" id="homepage-top-section">
             <Grid item md={6} className="hero-statement">
               <div className="statement-text">
-                <p className="text-main">Mormei is a Canadian writer of poetry and essays.</p>
+                <p className="text-main">Mormei is a Canadian <br/>poet and essayist.</p>
               </div>
             </Grid>
             <Grid item md={6} className="hero-graphic">
@@ -34,22 +36,40 @@ class Homepage extends Component {
             />
             </Grid>
           </Grid>
-          <Grid container className="homepage-writings">
-            <Grid item xs={12} className="writings-item">
-              <h1>The Sopron Story</h1>
-            </Grid>
-          </Grid>
-          {/*
+          <div className="homepage-sectionTitle" id="writing-section">
+            WRITING
+          </div>
           { EXCERPTS.map((excerpt) =>
-              <WorkExcerpt
-                title={excerpt.title}
-                publication={excerpt.publication}
-                datePublished={excerpt.datePublished}
-                excerpt={excerpt.excerpt}
-              />
+            <Grid container className="homepage-writings">
+              <Grid item xs={12} className="writings-item">
+                <Grid container className="item-container">
+                  <Grid item xs={12} className="item-title">
+                  {excerpt.title}
+                  </Grid>
+                  <Grid item xs={4} className="item-publication">
+                  {excerpt.publication}
+                  </Grid>
+                  <Grid item xs={4} className="item-publish-date">
+                  {excerpt.datePublished}
+                  </Grid>
+                  <Grid item xs={3} className="item-publish-date">
+                    Poetry
+                  </Grid>
+                  <Grid item xs={1} className="item-link-icon">
+                    <MdArrowForward/>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Grid>
             )
           }
-          */}
+          {/*
+          <WorkExcerpt
+            title={excerpt.title}
+            publication={excerpt.publication}
+            datePublished={excerpt.datePublished}
+            excerpt={excerpt.excerpt}
+          />*/}
         </PageContainer>
       </>
     );

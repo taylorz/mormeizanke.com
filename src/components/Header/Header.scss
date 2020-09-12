@@ -3,7 +3,7 @@
 .header {
   position: fixed;
   top: 0; left: 0; right: 0;
-  padding: $buffer*10;
+  padding: $buffer*8 $buffer*10;
   font-family: $secondaryFont;
   color: $primaryColor;
   font-size: $fontSizeParagraph;

@@ -63,6 +63,47 @@
   .homepage-writings {
     .writings-item {
       padding: $buffer*10;
+      @include transitionCubic;
+      &:hover {
+        cursor: pointer;
+        background: #f1f1f1;
+        @include transitionCubic;
+        .item-container {
+          .item-link-icon {
+            color: $primaryColor;
+            @include transitionCubic;
+            transform: translateX($buffer*4);
+          }
+        }
+      }
+      .item-container {
+        display: flex;
+        align-items: center;
+        .item-title {
+          font-family: $primaryFont;
+          font-size: $fontSizeStatement;
+          line-height: $lineHeightStatement;
+          color: $secondaryColor;
+          margin-bottom: $buffer*8;
+        }
+        .item-publication, .item-publish-date, .item-link-icon {
+          font-family: $secondaryFont;
+          font-size: $fontSizeStatement;
+          line-height: $lineHeightStatement;
+          color: $lightGray;
+        }
+        .item-link-icon {
+          text-align: right;
+          @include transitionCubic;
+          transform: translateX(0);
+        }
+      }
     }//writings-item
   }//homepage-writings
+  .homepage-sectionTitle {
+    padding: $buffer*20 $buffer*10;
+    font-size: $fontSizeStatement;
+    color: $mustard;
+    font-family: $secondaryFont;
+  }
 }//homepage-container

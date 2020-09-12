@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
+import { Link } from "react-router-dom";
+import { HashLink as HashLink } from 'react-router-hash-link';
 import './Header.scss'
 
 class Header extends Component {
@@ -8,11 +10,11 @@ class Header extends Component {
     return (
       <div className={`header ${className}`}>
       <div className="header-home">
-        <a href="/">Mormei Zanke</a>
+        <Link to="/">Mormei Zanke</Link>
       </div>
       <div className="header-links">
-        <a href="/">Writing</a>
-        <a href="/">About Me</a>
+        <HashLink to="#writing-section">Writing</HashLink>
+        <Link to="/about">About Me</Link>
       </div>
       </div>
     );
