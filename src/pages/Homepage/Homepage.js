@@ -8,12 +8,12 @@ const Homepage = () => (
     <Grid container className="section hero">
       <Grid item>Writes, draws, records, edits, builds, and transmits stories.</Grid>
     </Grid>
-    <Grid container className="section news">
+    {/* <Grid container className="section news">
       <Grid item>Featured</Grid>
     </Grid>
     <Grid container className="section news">
       <Grid item>News</Grid>
-    </Grid>
+    </Grid> */}
   </PageContainer>
 )
 

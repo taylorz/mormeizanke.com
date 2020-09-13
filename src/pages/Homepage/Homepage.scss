@@ -6,6 +6,12 @@
         &.hero {
             font-size: $fontSizeHero;
             line-height: $lineHeightHero;
+            font-weight: 600;
         }
+        // &.news {
+        //     font-size: $fontSize;
+        //     line-height: $lineHeight;
+        //     text-transform: uppercase;
+        // }
     }
 }//homepage
