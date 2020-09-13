@@ -1,19 +1,12 @@
 $buffer:                            4px;
 
-$bgColorLight:                       #fafafa;
-$accentColorCream:                   #FFF0E8;
-$primaryColor:                       #ECB7D9;
-$secondaryColor:                     #1E3F4F;
-$lightGray:                          #dddddd;
+$primaryFont:                        "Moderat Trial", serif;
 
-$primaryFont:                        "DomaineDisplayNarrowTest-Regular", serif;
-$secondaryFont:                      "Neuzeit Grotesk", sans-serif;
-
-$fontSize:                           1vmin;
+$fontSize:                           18px;
 $fontSizeStatement:                  $fontSize*4;
 $fontSizeHero:                       $fontSize*6;
 
-$lineHeight:                         2.5vmin;
+$lineHeight:                         20px;
 $lineHeightStatement:                $lineHeight*2;
 $lineHeightHero:                     $lineHeight*3;
 
@@ -32,5 +25,7 @@ $delay6:                             $delay1+$delay5;
 $delay7:                             $delay1+$delay6;
 $delay8:                             $delay1+$delay7;
 
-$borderGray:                         1px solid $lightGray;
-$borderGreen:                        1px solid $secondaryColor;
+$xs:                                 600px;
+$sm:                                 960px;
+$md:                                 1280px;
+$lg:                                 1920px;

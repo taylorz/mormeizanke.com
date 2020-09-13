@@ -1,0 +1,7 @@
+@import "../../styles/styles.scss";
+
+.nav-container {
+    max-width: $sm;
+    margin: 0 auto;
+    padding: $buffer*4;
+}

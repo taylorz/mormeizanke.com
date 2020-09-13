@@ -1,16 +1,11 @@
-import React, { Component } from 'react';
-import Grid from '@material-ui/core/Grid';
+import React from 'react';
 import './PageContainer.scss'
+import Grid from '@material-ui/core/Grid';
 
-class PageContainer extends Component {
-  render() {
-    const { children, className } = this.props
-    return (
-      <div className={`page-container ${className}`}>
-        {children}
-      </div>
-    );
-  }
-}
+const PageContainer = ({ className, children }) => (
+    <Grid container className={`page-container ${className}`}>
+      {children}
+    </Grid>
+)
 
 export default PageContainer;
