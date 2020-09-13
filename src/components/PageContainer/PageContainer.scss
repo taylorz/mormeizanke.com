@@ -4,4 +4,9 @@
   max-width: $sm;
   margin: 0 auto;
   padding: $buffer*8;
+  min-height: 100vh;
+  position: relative;
+  .content-container {
+    margin-bottom: $lineHeightStatement*4;
+  }
 }//page-container

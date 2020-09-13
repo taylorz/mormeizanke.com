@@ -1,0 +1,17 @@
+@import "../../styles/styles.scss";
+
+.footer-container {
+    // padding-top: $lineHeightStatement*4;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    position: absolute;
+    bottom: $lineHeightStatement;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        padding-bottom: $lineHeightStatement;
+        li {
+        }
+    }
+}

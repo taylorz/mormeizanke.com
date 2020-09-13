@@ -6,7 +6,9 @@ import PageContainer from '../../components/PageContainer/PageContainer';
 const Homepage = () => (
   <PageContainer className="homepage">
     <Grid container className="section hero">
-      <Grid item>Writes, draws, records, edits, builds, and transmits stories.</Grid>
+      <Grid item>
+        Writes, draws, records, edits, builds, and transmits stories.
+      </Grid>
     </Grid>
     {/* <Grid container className="section news">
       <Grid item>Featured</Grid>
