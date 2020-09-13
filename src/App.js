@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link} from "react-router-dom";
+import Grid from '@material-ui/core/Grid';
+// import Nav from './components/Nav/Nav'
 import './styles/styles.scss';
 import Homepage from './pages/Homepage/Homepage';
 import Poetry from './pages/Poetry/Poetry';

@@ -2,7 +2,7 @@
 
 .about {
   .bio {
-    margin-bottom: $lineHeightStatement*2;
+    margin-top: $lineHeightStatement*2;
     p {
       margin-top: 0;
       // &:nth-child(1) { color: pink; }
@@ -10,8 +10,11 @@
       // &:nth-child(3) { color: olive; }
     }
   }
-  img {
-    width: 100%;
-    background: #f5f5f5;
+  .image {
+    background: #f1f1f1;
+    img {
+      width: 60%;
+      margin: 0 auto;
+    }
   }
 }//about
