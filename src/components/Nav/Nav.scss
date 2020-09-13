@@ -1,7 +1,24 @@
 @import "../../styles/styles.scss";
 
 .nav-container {
-    max-width: $sm;
-    margin: 0 auto;
-    padding: $buffer*4;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        padding-bottom: $lineHeightStatement;
+        li {
+            .nav-link {
+                color: $fontColorLight;
+                @include transitionCubic;
+                &.active {
+                    color: $fontColor;
+                }
+                &:hover {
+                    cursor: pointer;
+                    color: $fontColor;
+                    @include transitionCubic;
+                }
+            }
+        }
+    }
 }

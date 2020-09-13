@@ -1,5 +1,11 @@
 @import "../../styles/styles.scss";
 
 .homepage {
- 
+    .section {
+        margin-bottom: $lineHeightStatement*4;
+        &.hero {
+            font-size: $fontSizeHero;
+            line-height: $lineHeightHero;
+        }
+    }
 }//homepage

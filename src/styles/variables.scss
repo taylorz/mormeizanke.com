@@ -1,14 +1,17 @@
 $buffer:                            4px;
 
-$primaryFont:                        "Moderat Trial", serif;
+$primaryFont:                        "GT Walsheim Pro Trial";
 
-$fontSize:                           18px;
-$fontSizeStatement:                  $fontSize*4;
+$fontSize:                           12px;
+$fontSizeStatement:                  $fontSize*2;
 $fontSizeHero:                       $fontSize*6;
 
-$lineHeight:                         20px;
+$lineHeight:                         14px;
 $lineHeightStatement:                $lineHeight*2;
-$lineHeightHero:                     $lineHeight*3;
+$lineHeightHero:                     $lineHeight*5;
+
+$fontColor:                          #33333a;
+$fontColorLight:                     #ddddda;
 
 $timing:                             .25s;
 $easingCubic:                        cubic-bezier(0.77, 0, 0.175, 1);
