@@ -29,7 +29,7 @@ body {
 
 .my-node-appear {
   opacity: 0;
-  @include animation(fadeIn, $timing, $easingCubic, .5s, 1, normal, forwards)
+  @include animation(fadeIn, $timing, $easingCubic, $delay4, 1, normal, forwards)
 }
 .my-node-enter {
   opacity: 0;
