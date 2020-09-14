@@ -1,11 +1,10 @@
 @import "../../styles/styles.scss";
 
 .page-container {
-  max-width: $md;
-  margin: 0 auto;
-  padding: $buffer*8;
-  min-height: 100vh;
-  position: relative;
+  position: absolute;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
   .content-container {
     margin-bottom: $lineHeightStatement*4;
   }

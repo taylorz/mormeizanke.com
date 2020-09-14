@@ -1,8 +1,10 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Link} from "react-router-dom";
+import React, { Component, useState, useEffect }  from 'react';
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Grid from '@material-ui/core/Grid';
-// import Nav from './components/Nav/Nav'
-import './styles/styles.scss';
+import AppWrapper from './components/AppWrapper/AppWrapper'
+import Nav from './components/Nav/Nav'
+import Home from './pages/Homepage/Homepage'
 import Homepage from './pages/Homepage/Homepage';
 import Poetry from './pages/Poetry/Poetry';
 import Essays from './pages/Essays/Essays';
@@ -11,23 +13,61 @@ import Reviews from './pages/Reviews/Reviews';
 import Drawings from './pages/Drawings/Drawings';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
-import './App.css';
+import createHistory from 'history/createBrowserHistory'
 
-const App = () => {
-    return (
-      <div className="App" >
-        <Router>
-          <Route exact path="/" component={Homepage}/>
-          <Route path="/poetry" component={Poetry}/>
-          <Route path="/essays" component={Essays}/>
-          <Route path="/podcasts" component={Podcasts}/>
-          <Route path="/reviews" component={Reviews}/>
-          <Route path="/drawings" component={Drawings}/>
-          <Route path="/about" component={About}/>
-          <Route path="/contact" component={Contact}/>
-        </Router>
-      </div>
-    );
+const routes = [
+  { path: '/', name: 'Home', Component: Homepage },
+  { path: '/about', name: 'About', Component: About },
+  { path: '/contact', name: 'Contact', Component: Contact },
+  { path: '/poetry', name: 'Poetry', Component: Poetry },
+  { path: '/essays', name: 'Essays', Component: Essays },
+  { path: '/podcasts', name: 'Podcasts', Component: Podcasts },
+  { path: '/reviews', name: 'Reviews', Component: Reviews },
+  { path: '/drawings', name: 'Drawings', Component: Drawings },
+]
+
+
+const history = createHistory()
+export default () => {
+  return(
+    <Router history={history}>
+      <AppWrapper>
+        <Grid container>
+          <Grid item xs={12} sm={3}>
+            <Nav/>
+          </Grid>
+          <Grid item xs={12} sm={9}>
+            <Route
+              render={({ location }) => {
+              const {key} = location
+
+                return(
+                  <TransitionGroup component={null}>
+                      <CSSTransition
+                      key={key}
+                      appear={true}
+                      classNames="my-node"
+                      timeout={{enter: 1000, exit: 500}}
+                      >
+                      <Switch location={location}>
+                        {routes.map(({ path, Component }) => (
+                          <Route key={path} exact path={path}>
+                            {({ match }) => (
+                              <div className="my-node">
+                                <Component/>
+                              </div>
+                            )}
+                          </Route>
+                        ))}
+                      </Switch>
+                    </CSSTransition>
+                  </TransitionGroup>
+                )    
+              }}
+            />
+          </Grid>
+        </Grid>
+      </AppWrapper>
+    </Router>
+  )
 }
-
-export default App;

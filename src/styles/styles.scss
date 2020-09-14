@@ -26,3 +26,20 @@ body {
     &:active {color: inherit;}
   }
 }//body
+
+.my-node-appear {
+  opacity: 0;
+  @include animation(fadeIn, $timing, $easingCubic, .5s, 1, normal, forwards)
+}
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  @include animation(fadeIn, $timing, $easingCubic, .5s, 1, normal, forwards)
+}
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  @include animation(fadeOut, $timing, $easingCubic, 0s, 1, normal, forwards)
+}

@@ -1,0 +1,12 @@
+@import "../../styles/styles.scss";
+
+.app-wrapper {
+  max-width: $md;
+  margin: 0 auto;
+  padding: $buffer*8;
+  .wrapper-area {
+    .MuiGrid-item {
+      position: relative;
+    }
+  }
+}//app-wrapper
