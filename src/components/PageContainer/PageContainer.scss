@@ -2,10 +2,4 @@
 
 .page-container {
   position: absolute;
-  height: 100vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  .content-container {
-    margin-bottom: $lineHeightStatement*4;
-  }
 }//page-container

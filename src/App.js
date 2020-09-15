@@ -4,7 +4,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Grid from '@material-ui/core/Grid';
 import AppWrapper from './components/AppWrapper/AppWrapper'
 import Nav from './components/Nav/Nav'
-import Home from './pages/Homepage/Homepage'
+import Footer from './components/Footer/Footer'
 import Homepage from './pages/Homepage/Homepage';
 import Poetry from './pages/Poetry/Poetry';
 import Essays from './pages/Essays/Essays';
@@ -47,7 +47,7 @@ export default () => {
                       key={key}
                       appear={true}
                       classNames="my-node"
-                      timeout={{enter: 2000, exit: 500}}
+                      timeout={{enter: 1500, exit: 500}}
                       >
                       <Switch location={location}>
                         {routes.map(({ path, Component }) => (

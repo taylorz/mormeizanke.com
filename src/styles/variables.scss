@@ -2,13 +2,13 @@ $buffer:                            4px;
 
 $primaryFont:                        "GT Walsheim Pro Trial";
 
-$fontSize:                           12px;
+$fontSize:                           14px;
 $fontSizeStatement:                  $fontSize*2;
-$fontSizeHero:                       $fontSize*6;
+$fontSizeHero:                       $fontSize*5;
 
-$lineHeight:                         14px;
+$lineHeight:                         16px;
 $lineHeightStatement:                $lineHeight*2;
-$lineHeightHero:                     $lineHeight*5;
+$lineHeightHero:                     $lineHeight*4;
 
 $fontColor:                          #33333a;
 $fontColorLight:                     #ddddda;
@@ -19,7 +19,7 @@ $easingRegular:                      ease-in-out;
 $transitionCubic:                    all $timing $easingCubic;
 $transitionRegular:                  all $timing $easingRegular;
 
-$delay1:                             .25s;
+$delay1:                             .15s;
 $delay2:                             $delay1+$delay1;
 $delay3:                             $delay1+$delay2;
 $delay4:                             $delay1+$delay3;

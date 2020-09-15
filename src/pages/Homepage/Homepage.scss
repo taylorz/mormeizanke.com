@@ -2,16 +2,11 @@
 
 .homepage {
     .section {
-        margin-bottom: $lineHeightStatement*4;
+        padding-bottom: $lineHeightStatement*8;
         &.hero {
             font-size: $fontSizeHero;
             line-height: $lineHeightHero;
-            font-weight: 600;
+            font-weight: 700;
         }
-        // &.news {
-        //     font-size: $fontSize;
-        //     line-height: $lineHeight;
-        //     text-transform: uppercase;
-        // }
     }
 }//homepage
