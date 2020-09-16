@@ -53,7 +53,6 @@
                     visibility: visible;
                     opacity: 1;
                     @include transitionCubic;
-                    transition-delay: .25s;
                 }
             }
         }
