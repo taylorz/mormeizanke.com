@@ -53,7 +53,7 @@
                 height: calc(100vh - (#{$lineHeightStatementMobile}*3));
                 background: white;
                 position: absolute;
-                top: $lineHeightStatementMobile*2;
+                top: $lineHeightStatementMobile*1.9; //1.9 to slightly cut off content in the bottom container which shows
                 bottom: 0;
                 left: 0;
                 right: 0;
