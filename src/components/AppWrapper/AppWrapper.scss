@@ -5,8 +5,10 @@
   margin: 0 auto;
   padding: $buffer*8;
   overflow-x: hidden;
-  // overflow-y: scroll;
   height: 100vh;
+  @include breakpoint(xs) {
+    padding: $buffer*4;
+  }
   .wrapper-area {
     .MuiGrid-item {
       position: relative;

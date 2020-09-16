@@ -6,12 +6,16 @@ $primaryFontOblique:                 "GT Walsheim Medium Oblique", sans-serif;
 $fontSize:                           14px;
 $fontSizeStatement:                  $fontSize*2;
 $fontSizeHero:                       $fontSize*5;
+
 $fontSizeStatementMobile:            $fontSize*1.5;
+$fontSizeHeroMobile:                 $fontSize*3;
 
 $lineHeight:                         16px;
 $lineHeightStatement:                $lineHeight*2;
 $lineHeightHero:                     $lineHeight*4;
-$lineHeightStatementMobile:          $lineHeight*1.65;
+
+$lineHeightStatementMobile:          $lineHeight*1.6;
+$lineHeightHeroMobile:               $lineHeight*2.5;
 
 $fontColor:                          #33333a;
 $fontColorLight:                     #ddddda;

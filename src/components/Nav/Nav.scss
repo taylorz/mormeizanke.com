@@ -2,6 +2,13 @@
 
 .nav-container {
     .nav-items {
+        @include breakpoint(xs) {
+            font-size: $fontSizeStatementMobile;
+            line-height: $lineHeightStatementMobile;
+            ul {
+                padding-bottom: $lineHeightStatementMobile !important;
+            }
+        }
         ul {
             list-style-type: none;
             padding: 0;
@@ -41,7 +48,7 @@
                 height: calc(100vh - (#{$lineHeightStatementMobile}*3));
                 background: white;
                 position: absolute;
-                top: $lineHeightStatement*2;
+                top: $lineHeightStatementMobile*2;
                 bottom: 0;
                 left: 0;
                 right: 0;
