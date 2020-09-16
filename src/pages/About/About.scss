@@ -2,9 +2,20 @@
 
 .about {
   .bio {
-    margin-bottom: $lineHeightStatement*2;
+    margin-top: $lineHeightStatement;
+    @include breakpoint(xs) {
+      margin-top: $lineHeightStatementMobile;
+    }
     p {
       margin-top: 0;
+    }
+  }
+  .featured-quote {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $fontColorLight;
+    p {
+      font-family: $primaryFontOblique;
     }
   }
   .image {
