@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-
 $buffer:                            4px;
 
-// $primaryFont:                        "GT Walsheim Pro Trial";
-$primaryFont:                        "GT Walsheim Pro Trial", "Poppins", sans-serif;
+$primaryFont:                        "GT Walsheim Medium", sans-serif;
+$primaryFontOblique:                 "GT Walsheim Medium Oblique", sans-serif;
 
 $fontSize:                           14px;
 $fontSizeStatement:                  $fontSize*2;

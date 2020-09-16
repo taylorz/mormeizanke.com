@@ -2,22 +2,22 @@
 @import '/variables.scss';
 
 
-// @font-face {
-//   font-family: 'Fann Grotesque';
-//   src: url(../assets/fonts/fann/fann-grotesque-regular-pro.eot);
-//   src: url(../assets/fonts/fann/fann-grotesque-regular-pro.woff2) format('woff2'),
-//        url(../assets/fonts/fann/fann-grotesque-regular-pro.woff) format("woff");
-//   font-weight: normal;
-//   font-style: normal;
-// }
-// @font-face {
-//   font-family: 'Fann Grotesque Semibold';
-//   src: url(../assets/fonts/fann/fann-grotesque-semibold-pro.eot);
-//   src: url(../assets/fonts/fann/fann-grotesque-semibold-pro.woff2) format('woff2'),
-//        url(../assets/fonts/fann/fann-grotesque-semibold-pro.woff) format("woff");
-//   font-weight: normal;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'GT Walsheim Medium';
+  src: url(../assets/fonts/gt-walsheim/GT-Walsheim-Medium.eot);
+  src: url(../assets/fonts/gt-walsheim/GT-Walsheim-Medium.woff2) format('woff2'),
+       url(../assets/fonts/gt-walsheim/GT-Walsheim-Medium.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GT Walsheim Medium Oblique';
+  src: url(../assets/fonts/gt-walsheim/GT-Walsheim-Medium-Oblique.eot);
+  src: url(../assets/fonts/gt-walsheim/GT-Walsheim-Medium-Oblique.woff2) format('woff2'),
+       url(../assets/fonts/gt-walsheim/GT-Walsheim-Medium-Oblique.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 *{
   -webkit-tap-highlight-color: rgba(0,0,0,0);
