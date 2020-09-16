@@ -50,9 +50,10 @@
             @include breakpoint(xs) {
                 // width: calc(100vw - (#{$buffer}*16));
                 width: 100vw;
-                height: calc(100vh - (#{$lineHeightStatementMobile}*3));
+                height: calc(100vh - (#{$lineHeightStatementMobile}*2));
                 background: white;
-                position: absolute;
+                position: fixed;
+                padding: $buffer*4;
                 top: $lineHeightStatementMobile*1.9; //1.9 to slightly cut off content in the bottom container which shows
                 bottom: 0;
                 left: 0;
@@ -61,7 +62,7 @@
                 opacity: 0;
                 visibility: hidden;
                 @include transitionCubic;
-                transition-delay: .25s;
+                transition-delay: $delay1;
                 &.mobile-nav-open {
                     visibility: visible;
                     opacity: 1;

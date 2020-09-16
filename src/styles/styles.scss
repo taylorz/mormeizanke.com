@@ -54,11 +54,11 @@ body {
   opacity: 0;
 }
 .my-node-enter-active {
-  @include animation(fadeIn, $timing, $easingCubic, .5s, 1, normal, forwards)
+  @include animation(fadeRotateIn, $timing, $easingCubic, .5s, 1, normal, forwards)
 }
 .my-node-exit {
   opacity: 1;
 }
 .my-node-exit-active {
-  @include animation(fadeOut, $timing, $easingCubic, 0s, 1, normal, forwards)
+  @include animation(fadeUpOut, $timing, $easingCubic, 0s, 1, normal, forwards)
 }
