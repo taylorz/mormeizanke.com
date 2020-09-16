@@ -1,36 +1,70 @@
 @import "../../styles/styles.scss";
 
 .nav-container {
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        padding-bottom: $lineHeightStatement;
-        li {
-            .nav-link {
-                color: $fontColorLight;
-                @include transitionCubic;
-                &.active {
-                    color: $fontColor;
-                }
-                &:hover {
-                    cursor: pointer;
-                    color: $fontColor;
+    .nav-items {
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            padding-bottom: $lineHeightStatement;
+            li {
+                .nav-link {
+                    color: $fontColorLight;
                     @include transitionCubic;
+                    &.active {
+                        color: $fontColor;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        color: $fontColor;
+                        @include transitionCubic;
+                    }
+                }
+            }
+            &:nth-child(1) {
+                opacity: 0;
+                @include animation(fadeRotateIn, $timing, $easingCubic, 0s, 1, normal, forwards)
+            }
+            &:nth-child(2) {
+                opacity: 0;
+                @include animation(fadeRotateIn, $timing, $easingCubic, $delay1, 1, normal, forwards)
+            }
+            &:nth-child(3) {
+                opacity: 0;
+                @include animation(fadeRotateIn, $timing, $easingCubic, $delay2, 1, normal, forwards)
+            }
+        }
+        .nav-page-links {
+            @include breakpoint(xs) {
+                width: 100vw;
+                height: calc(100vh - (#{$lineHeightStatement}*3));
+                background: white;
+                position: absolute;
+                top: $lineHeightStatement*2;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 2;
+                opacity: 0;
+                visibility: hidden;
+                @include transitionCubic;
+                transition-delay: .25s;
+                &.mobile-nav-open {
+                    visibility: visible;
+                    opacity: 1;
+                    @include transitionCubic;
+                    transition-delay: .25s;
                 }
             }
         }
-        &:nth-child(1) {
-            opacity: 0;
-            @include animation(fadeRotateIn, $timing, $easingCubic, 0s, 1, normal, forwards)
-        }
-        &:nth-child(2) {
-            opacity: 0;
-            @include animation(fadeRotateIn, $timing, $easingCubic, $delay1, 1, normal, forwards)
-        }
-        &:nth-child(3) {
-            opacity: 0;
-            @include animation(fadeRotateIn, $timing, $easingCubic, $delay2, 1, normal, forwards)
+    }
+    .mobile-nav-toggler {
+        display: none;
+        @include breakpoint(xs) {
+            display: flex;
+            div {
+                margin-top: -$buffer;
+            }
         }
     }
 }

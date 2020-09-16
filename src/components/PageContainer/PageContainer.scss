@@ -2,4 +2,7 @@
 
 .page-container {
   position: absolute;
+  @include breakpoint(xs) {
+    padding-bottom: $lineHeightStatement*8;
+  }
 }//page-container

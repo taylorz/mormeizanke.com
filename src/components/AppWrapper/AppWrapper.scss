@@ -4,6 +4,9 @@
   max-width: $md;
   margin: 0 auto;
   padding: $buffer*8;
+  overflow-x: hidden;
+  // overflow-y: scroll;
+  height: 100vh;
   .wrapper-area {
     .MuiGrid-item {
       position: relative;

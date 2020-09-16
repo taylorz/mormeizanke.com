@@ -6,7 +6,10 @@
         &.hero {
             font-size: $fontSizeHero;
             line-height: $lineHeightHero;
-            font-weight: 700;
+            @include breakpoint(xs) {
+                font-size: $fontSizeStatement;
+                line-height: $lineHeightStatement;
+            }
         }
     }
 }//homepage
