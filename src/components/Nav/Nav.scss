@@ -60,6 +60,8 @@
     }
     .mobile-nav-toggler {
         display: none;
+        opacity: 0;
+        @include animation(fadeRotateIn, $timing, $easingCubic, $delay2, 1, normal, forwards)
         @include breakpoint(xs) {
             display: flex;
             div {
