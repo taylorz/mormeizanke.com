@@ -55,13 +55,13 @@
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateY(-10px);
+    -webkit-transform: translateY(-$buffer*2);
   }
 }
 @keyframes fadeRotateIn {
   0% {
     opacity: 0;
-    -webkit-transform: rotate(-2deg) translateY(10px);
+    -webkit-transform: rotate(-2deg) translateY($buffer*2) rotateY(10deg);
   }
   100% {
     opacity: 1;
@@ -75,6 +75,6 @@
   }
   100% {
     opacity: 0;
-    -webkit-transform: rotate(-2deg) translateY(10px);
+    -webkit-transform: rotate(-2deg) translateY($buffer*2);
   }
 }
