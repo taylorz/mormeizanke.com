@@ -10,10 +10,10 @@ const About = () => (
       <Grid item xs={12} sm={9} className="image">
         <img src={MormeiHeadshot}/>
       </Grid>
-      <Grid item xs={10} sm={3} className="featured-quote">
+      {/* <Grid item xs={10} sm={3} className="featured-quote">
       Every day is a new day. It is better to be lucky. But I would rather be exact. Then when luck comes you are ready.
       <p>Ernest Hemmingway</p>
-      </Grid>
+      </Grid> */}
     </Grid>
     <Grid container>
       <Grid item xs={12} className="bio">
