@@ -9,10 +9,12 @@ $primaryFont:                        "GT Walsheim Pro Trial", "Poppins", sans-se
 $fontSize:                           14px;
 $fontSizeStatement:                  $fontSize*2;
 $fontSizeHero:                       $fontSize*5;
+$fontSizeStatementMobile:            $fontSize*1.5;
 
 $lineHeight:                         16px;
 $lineHeightStatement:                $lineHeight*2;
 $lineHeightHero:                     $lineHeight*4;
+$lineHeightStatementMobile:          $lineHeight*1.65;
 
 $fontColor:                          #33333a;
 $fontColorLight:                     #ddddda;

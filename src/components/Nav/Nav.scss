@@ -36,9 +36,13 @@
         }
         .nav-page-links {
             @include breakpoint(xs) {
+                @include breakpoint(xs) {
+                    font-size: $fontSizeStatementMobile;
+                    line-height: $lineHeightStatementMobile;
+                }
                 // width: calc(100vw - (#{$buffer}*16));
                 width: 100vw;
-                height: calc(100vh - (#{$lineHeightStatement}*3));
+                height: calc(100vh - (#{$lineHeightStatementMobile}*3));
                 background: white;
                 position: absolute;
                 top: $lineHeightStatement*2;

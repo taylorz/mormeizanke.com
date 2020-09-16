@@ -3,6 +3,10 @@
 .about {
   .bio {
     margin-bottom: $lineHeightStatement*2;
+    @include breakpoint(xs) {
+      font-size: $fontSizeStatementMobile;
+      line-height: $lineHeightStatementMobile;
+    }
     p {
       margin-top: 0;
     }
