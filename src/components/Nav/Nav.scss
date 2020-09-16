@@ -18,6 +18,11 @@
                 .nav-link {
                     color: $fontColorLight;
                     @include transitionCubic;
+                    &.home-link {
+                        @include breakpoint(xs) {
+                            color: $fontColor;
+                        }
+                    }
                     &.active {
                         color: $fontColor;
                     }

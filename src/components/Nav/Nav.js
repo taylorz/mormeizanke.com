@@ -11,7 +11,7 @@ const Nav = () => {
             <Grid item>
                 <div className="nav-items">
                     <ul>
-                        <li><NavLink onClick={mobileNavOpen && (() => setMobileNavOpen(false))} className="nav-link" exact to="/" activeClassName="active">Mormei Zanke</NavLink></li>
+                        <li><NavLink onClick={mobileNavOpen && (() => setMobileNavOpen(false))} className="nav-link home-link" exact to="/" activeClassName="active">Mormei Zanke</NavLink></li>
                     </ul>
                     <div className={`nav-page-links ${mobileNavOpen && "mobile-nav-open"}`}>
                         <ul>
