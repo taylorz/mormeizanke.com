@@ -7,7 +7,7 @@ const Homepage = () => (
   <PageContainer className="homepage">
     <Grid container className="section hero">
       <Grid item>
-        writes <br/> draws records <br/> edits builds <br/> transmits <br/>stories.
+        Mormei writes <br/> draws records <br/> edits builds <br/> transmits <br/>stories.
       </Grid>
     </Grid>
     {/* <Grid container className="section news">
