@@ -4,5 +4,7 @@
   position: absolute;
   @include breakpoint(xs) {
     padding-bottom: $lineHeightStatement*8;
+    font-size: $fontSizeStatementMobile;
+    line-height: $lineHeightStatementMobile;
   }
 }//page-container
