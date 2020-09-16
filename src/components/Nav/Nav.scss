@@ -36,7 +36,7 @@
         }
         .nav-page-links {
             @include breakpoint(xs) {
-                width: 100vw;
+                width: calc(100vw - (#{$buffer}*16));
                 height: calc(100vh - (#{$lineHeightStatement}*3));
                 background: white;
                 position: absolute;
