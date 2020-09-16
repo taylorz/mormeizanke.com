@@ -30,7 +30,7 @@ const Nav = () => {
             </Grid>
             <Grid item className="mobile-nav-toggler">
                 <div onClick={() => setMobileNavOpen(!mobileNavOpen)}>
-                    <Hamburger size={28} toggled={mobileNavOpen}/>
+                    <Hamburger size={24} toggled={mobileNavOpen}/>
                 </div>
             </Grid>
         </Grid>
