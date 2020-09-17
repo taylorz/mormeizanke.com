@@ -49,6 +49,8 @@
         .nav-page-links {
             @include breakpoint(xs) {
                 // width: calc(100vw - (#{$buffer}*16));
+                font-size: $fontSizeHeroMobile;
+                line-height: $lineHeightHeroMobile;
                 width: 100vw;
                 height: calc(100vh - (#{$lineHeightStatementMobile}*2));
                 background: white;
