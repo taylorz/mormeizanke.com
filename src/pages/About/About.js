@@ -9,7 +9,7 @@ import MormeiHeadshot from '../../assets/images/mormei-image.png';
 const About = () => (
   <PageContainer className="about">
     <Grid container spacing={4} alignItems="flex-end">
-      <Grid item xs={12} sm={9} className="image">
+      <Grid item xs={12} className="image">
         <img src={MormeiHeadshot}/>
       </Grid>
       {/* <Grid item xs={10} sm={3} className="featured-quote">
