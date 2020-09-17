@@ -2,6 +2,8 @@ import React from 'react';
 import './About.scss'
 import Grid from '@material-ui/core/Grid';
 import PageContainer from '../../components/PageContainer/PageContainer';
+import Text from '../../components/Text/Text';
+
 import MormeiHeadshot from '../../assets/images/mormei-image.png';
 
 const About = () => (

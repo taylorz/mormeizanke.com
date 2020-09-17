@@ -6,7 +6,7 @@ import Text from '../../components/Text/Text';
 
 const Podcasts = () => (
   <PageContainer className="podcasts">
-      <Text headline soft>Podcasts</Text>
+      <Text soft>Podcasts</Text>
   </PageContainer>
 )
 
