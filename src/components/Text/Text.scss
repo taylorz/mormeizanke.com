@@ -1,0 +1,16 @@
+@import "../../styles/styles.scss";
+
+.text {
+    margin: 0;
+    &.headline {
+        font-size: $fontSizeHero;
+        line-height: $lineHeightHero;
+        @include breakpoint(xs) {
+            font-size: $fontSizeHeroMobile;
+            line-height: $lineHeightHeroMobile;
+        }
+    }
+    &.soft {
+        color: pink;
+    }
+}

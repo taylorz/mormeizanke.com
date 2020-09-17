@@ -2,10 +2,11 @@ import React from 'react';
 import './Podcasts.scss'
 import Grid from '@material-ui/core/Grid';
 import PageContainer from '../../components/PageContainer/PageContainer';
+import Text from '../../components/Text/Text';
 
 const Podcasts = () => (
   <PageContainer className="podcasts">
-      Podcasts
+      <Text headline soft>Podcasts</Text>
   </PageContainer>
 )
 

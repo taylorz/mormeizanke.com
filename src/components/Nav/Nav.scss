@@ -80,8 +80,8 @@
             @include animation(fadeRotateIn, $timing, $easingCubic, $delay2, 1, normal, forwards)
             display: flex;
             div {
-                margin-top: -5px;
-                margin-right: -5px;
+                margin-top: -$buffer;
+                margin-right: -$buffer;
             }
         }
     }
