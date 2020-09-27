@@ -6,7 +6,7 @@ import Text from '../../components/Text/Text';
 
 const Essays = () => (
   <PageContainer className="essays">
-      <Text soft>Essays</Text>
+      <Text>Essays</Text>
   </PageContainer>
 )
 
