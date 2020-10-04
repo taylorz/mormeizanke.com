@@ -4,9 +4,12 @@
     .section {
         padding-bottom: $lineHeightStatement*8;
         &.hero {
+            // font-family: $primaryFontOblique;
             font-size: $fontSizeHero;
             line-height: $lineHeightHero;
-            color: pink;
+            span {
+                color: pink;
+            }
             @include breakpoint(xs) {
                 font-size: $fontSizeHeroMobile;
                 line-height: $lineHeightHeroMobile;

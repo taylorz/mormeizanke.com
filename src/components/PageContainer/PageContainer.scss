@@ -2,6 +2,7 @@
 
 .page-container {
   position: absolute;
+  min-height: calc(100vh - #{$buffer*8});
   @include breakpoint(xs) {
     padding-bottom: $lineHeightStatement*8;
     font-size: $fontSizeStatementMobile;
