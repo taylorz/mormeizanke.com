@@ -58,10 +58,20 @@
     -webkit-transform: translateY(-$buffer*2);
   }
 }
+@keyframes fadeUpIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY($buffer*2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+}
 @keyframes fadeRotateIn {
   0% {
     opacity: 0;
-    -webkit-transform: rotate(-2deg) translateY($buffer*2) rotateY(2deg);
+    -webkit-transform: rotate(-1deg) translateY($buffer*2);
   }
   100% {
     opacity: 1;
@@ -75,6 +85,6 @@
   }
   100% {
     opacity: 0;
-    -webkit-transform: rotate(-2deg) translateY($buffer*2);
+    -webkit-transform: rotate(-1deg) translateY($buffer*2);
   }
 }

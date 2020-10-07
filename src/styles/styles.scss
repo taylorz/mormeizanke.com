@@ -48,13 +48,13 @@ body {
 
 .my-node-appear {
   opacity: 0;
-  @include animation(fadeRotateIn, $timing, $easingCubic, $delay4, 1, normal, forwards)
+  @include animation(fadeUpIn, $timing, $easingCubic, $delay4, 1, normal, forwards)
 }
 .my-node-enter {
   opacity: 0;
 }
 .my-node-enter-active {
-  @include animation(fadeRotateIn, $timing, $easingCubic, .5s, 1, normal, forwards)
+  @include animation(fadeUpIn, $timing, $easingCubic, .5s, 1, normal, forwards)
 }
 .my-node-exit {
   opacity: 1;
