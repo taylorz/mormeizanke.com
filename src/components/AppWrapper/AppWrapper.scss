@@ -1,15 +1,15 @@
 @import "../../styles/styles.scss";
 
 .app-wrapper {
-  max-width: $md;
-  margin: 0 auto;
-  padding: $buffer*8;
   overflow-x: hidden;
   height: 100vh;
   @include breakpoint(xs) {
     padding: $buffer*4;
   }
   .wrapper-area {
+    max-width: $md;
+    margin: 0 auto;
+    padding: $buffer*8;
     .MuiGrid-item {
       position: relative;
     }
