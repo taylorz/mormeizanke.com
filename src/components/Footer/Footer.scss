@@ -1,10 +1,11 @@
 @import "../../styles/styles.scss";
 
 .footer-container {
-    font-size: $fontSize;
-    line-height: $lineHeight;
     position: absolute;
-    bottom: $buffer*8;
+    bottom: $buffer*4;
+    @include breakpoint(xs) {
+        display: none;
+    }
     ul {
         list-style-type: none;
         padding: 0;

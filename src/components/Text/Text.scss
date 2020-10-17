@@ -10,7 +10,13 @@
             line-height: $lineHeightHeroMobile;
         }
     }
-    &.soft {
-        color: olive;
+    &.italic {
+        font-family: $primaryFontOblique;
+    }
+    &.paragraph {
+        margin-bottom: $lineHeightStatement;
+    }
+    &.inline {
+        display: inline;
     }
 }

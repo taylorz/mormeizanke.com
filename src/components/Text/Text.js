@@ -1,11 +1,14 @@
 import React from 'react';
 import './Text.scss'
 
-const Text = ({ children, headline, soft }) => (
+const Text = ({ className, children, headline, italic, p, inline }) => (
     <p className={`
         text
+        ${className && className}
         ${headline && "headline"}
-        ${soft && "soft"}
+        ${italic && "italic"}
+        ${p && "paragraph"}
+        ${inline && "inline"}
     `}>
         {children}
     </p>

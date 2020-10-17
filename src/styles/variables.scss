@@ -4,15 +4,15 @@ $primaryFont:                        "GT Walsheim Medium", sans-serif;
 $primaryFontOblique:                 "GT Walsheim Medium Oblique", sans-serif;
 
 $fontSize:                           14px;
-$fontSizeStatement:                  $fontSize*2;
-$fontSizeHero:                       $fontSize*10;
+$fontSizeStatement:                  $fontSize*1.5;
+$fontSizeHero:                       $fontSize*3;
 
 $fontSizeStatementMobile:            $fontSize*1.25;
 $fontSizeHeroMobile:                 $fontSize*3.5;
 
 $lineHeight:                         16px;
-$lineHeightStatement:                $lineHeight*2;
-$lineHeightHero:                     $lineHeight*8;
+$lineHeightStatement:                $lineHeight*1.5;
+$lineHeightHero:                     $lineHeight*2.5;
 
 $lineHeightStatementMobile:          $lineHeight*1.4;
 $lineHeightHeroMobile:               $lineHeight*3;
@@ -21,6 +21,7 @@ $fontColor:                          #33333a;
 $fontColorLight:                     #ddddda;
 
 $timing:                             .5s;
+$timingUrgent:                       .25s;
 $easingCubic:                        cubic-bezier(0.77, 0, 0.175, 1);
 $easingRegular:                      ease-in-out;
 $transitionCubic:                    all $timing $easingCubic;

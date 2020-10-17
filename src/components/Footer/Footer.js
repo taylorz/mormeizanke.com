@@ -1,11 +1,11 @@
 import React from 'react';
 import './Footer.scss'
 import Grid from '@material-ui/core/Grid';
+import Text from '../Text/Text';
 
 const Footer = () => (
     <Grid container className="footer-container">
-        <Grid item xs={6}>&copy; 2020 Mormei Zanke</Grid>
-        <Grid item xs={6}>Join my mailing list</Grid>
+        <Grid item xs={6}><Text>&copy; 2020 Mormei Zanke</Text></Grid>
     </Grid>
 )
 

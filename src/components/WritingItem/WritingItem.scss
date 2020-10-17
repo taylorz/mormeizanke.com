@@ -1,0 +1,26 @@
+@import "../../styles/styles.scss";
+
+.writing-item {
+  margin-bottom: $lineHeightStatement;
+  &:hover {
+    .favorite {
+      color: lavender;
+      margin-left: $buffer*8;
+      @include transitionCubic;
+    }
+  }
+  .title {
+    font-size: $fontSizeHero;
+    line-height: $lineHeightHero;
+  }
+  .year {
+    margin-right: $buffer*4;
+  }
+  .publication {
+  }
+  .favorite {
+    @include transitionCubic;
+    color: pink;
+    margin-left: $buffer*8;
+  }
+}

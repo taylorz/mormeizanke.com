@@ -1,12 +1,17 @@
 import React from 'react';
-import './Reviews.scss'
-import Grid from '@material-ui/core/Grid';
+import './Reviews.scss';
 import PageContainer from '../../components/PageContainer/PageContainer';
-import Text from '../../components/Text/Text';
+import WritingItem from '../../components/WritingItem/WritingItem';
+
+import REVIEWS from '../../constants/reviews';
 
 const Reviews = () => (
   <PageContainer className="reviews">
-      <Text>Reviews</Text>
+    {REVIEWS.map((p) => 
+      <WritingItem
+        writing={p}
+      />
+    )}
   </PageContainer>
 )
 

@@ -8,7 +8,7 @@ const PageContainer = ({ className, children }) => (
       <Grid item xs={12} className="content-container">
         {children}
       </Grid>
-      {/* <Footer/> */}
+      <Footer/>
     </Grid>
 )
 

@@ -1,12 +1,17 @@
 import React from 'react';
 import './Poetry.scss'
-import Grid from '@material-ui/core/Grid';
 import PageContainer from '../../components/PageContainer/PageContainer';
-import Text from '../../components/Text/Text';
+import WritingItem from '../../components/WritingItem/WritingItem';
+
+import POETRY from '../../constants/poetry'
 
 const Poetry = () => (
   <PageContainer className="poetry">
-      <Text>Poetry</Text>
+    {POETRY.map((p) => 
+      <WritingItem
+        writing={p}
+      />
+    )}
   </PageContainer>
 )
 
