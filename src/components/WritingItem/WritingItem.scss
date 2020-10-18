@@ -15,8 +15,10 @@
   }
   .year {
     margin-right: $buffer*4;
+    // font-family: $primaryFontOblique;
   }
   .publication {
+    // font-family: $primaryFontOblique;
   }
   .favorite {
     @include transitionCubic;
