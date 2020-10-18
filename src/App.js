@@ -23,7 +23,7 @@ const routes = [
   { path: '/essays', name: 'Essays', Component: Essays },
   { path: '/podcasts', name: 'Podcasts', Component: Podcasts },
   { path: '/reviews', name: 'Reviews', Component: Reviews },
-  { path: '/drawings', name: 'Drawings', Component: Drawings },
+  // { path: '/drawings', name: 'Drawings', Component: Drawings },
 ]
 
 

@@ -6,7 +6,21 @@ import Text from '../../components/Text/Text';
 
 const Podcasts = () => (
   <PageContainer className="podcasts">
-      <Text>Podcasts</Text>
+      <Grid container>
+        <Grid item xs={1}>2020</Grid>
+        <Grid item xs={11}>
+          <Text p>Creativity Calls</Text>
+          <Text p>Join, Mormei, as she calls up her friends who are artists, poets, musicians, cartoonists, architects, and anthropologists—all finding meaning in their private corner of the world.</Text> 
+          <Text p>Together they investigate creative questions, decisively or uncertainly— but always catching up at the end of each call.</Text> 
+          <Text>Episode 1: Social Media...Monster?</Text>
+          <Text>Episode 2: Preserving Moments</Text>
+          <Text>Episode 3: TBD</Text>
+          <Text>Episode 4: TBD</Text>
+          <Text>Episode 5: TBD</Text>
+          <Text p>Episode 6: TBD</Text>
+          <Text>@creativitycallspod</Text>
+        </Grid>
+      </Grid>
   </PageContainer>
 )
 

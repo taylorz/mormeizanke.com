@@ -5,7 +5,7 @@ import Text from '../Text/Text';
 
 const Footer = () => (
     <Grid container className="footer-container">
-        <Grid item xs={6}><Text>&copy; 2020 Mormei Zanke</Text></Grid>
+        <Grid item xs={12}><Text>&copy; 2020 Mormei Zanke</Text></Grid>
     </Grid>
 )
 
