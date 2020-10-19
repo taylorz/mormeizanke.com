@@ -24,5 +24,8 @@
     @include transitionCubic;
     color: pink;
     margin-left: $buffer*8;
+    @include breakpoint(xs) {
+      margin: 0;
+    }
   }
 }

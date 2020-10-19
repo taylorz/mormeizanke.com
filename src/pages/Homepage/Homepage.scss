@@ -5,8 +5,8 @@
         padding-bottom: $lineHeightStatement*8;
         &.hero {
             // font-family: $primaryFontOblique;
-            // font-size: $fontSizeHero;
-            // line-height: $lineHeightHero;
+            font-size: $fontSizeHero;
+            line-height: $lineHeightHero;
             span {
                 color: pink;
             }
