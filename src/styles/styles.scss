@@ -49,28 +49,18 @@ body {
 }//body
 
 .my-node-appear {
-  .content-container {
     opacity: 0;
     @include animation(fadeUpIn, $timing, $easingCubic, $delay4, 1, normal, forwards)
-  }
 }
 .my-node-enter {
-  .content-container {
     opacity: 0;
-  }
 }
 .my-node-enter-active {
-  .content-container {
     @include animation(fadeUpIn, $timing, $easingCubic, .5s, 1, normal, forwards)
-  }
 }
 .my-node-exit {
-  .content-container {
     opacity: 1;
-  }
 }
 .my-node-exit-active {
-  .content-container {
     @include animation(fadeUpOut, $timing, $easingCubic, 0s, 1, normal, forwards)
-  }
 }
