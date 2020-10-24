@@ -7,8 +7,8 @@ import Text from '../../components/Text/Text';
 const Podcasts = () => (
   <PageContainer className="podcasts">
       <Grid container>
-        <Grid item xs={3} sm={1}>2020</Grid>
-        <Grid item xs={9} sm={11}>
+        <Grid item xs={2} sm={1}>2020</Grid>
+        <Grid item xs={10} sm={11}>
           <Text p>Creativity Calls</Text>
           <Text p>Join, Mormei, as she calls up her friends who are artists, poets, musicians, cartoonists, architects, and anthropologists—all finding meaning in their private corner of the world.</Text> 
           <Text p>Together they investigate creative questions, decisively or uncertainly— but always catching up at the end of each call.</Text> 
