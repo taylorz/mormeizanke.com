@@ -25,8 +25,6 @@ const routes = [
   { path: '/reviews', name: 'Reviews', Component: Reviews },
   // { path: '/drawings', name: 'Drawings', Component: Drawings },
 ]
-
-
 const history = createHistory()
 export default () => {
   return(
