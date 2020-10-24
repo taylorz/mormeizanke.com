@@ -18,7 +18,7 @@ const Podcasts = () => (
           <Text>Episode 4: TBD</Text>
           <Text>Episode 5: TBD</Text>
           <Text p>Episode 6: TBD</Text>
-          <Text>@creativitycallspod</Text>
+          <Text><a href="https://www.instagram.com/creativitycallspod/" target="_blank">@creativitycallspod</a></Text>
         </Grid>
       </Grid>
   </PageContainer>

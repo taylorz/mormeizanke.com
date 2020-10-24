@@ -1,7 +1,6 @@
 import React from 'react';
 import './AppWrapper.scss'
 import Grid from '@material-ui/core/Grid';
-import Footer from '../Footer/Footer'
 
 const AppWrapper = ({ children, className }) => (
     <Grid container className={`app-wrapper ${className && className}`}>
