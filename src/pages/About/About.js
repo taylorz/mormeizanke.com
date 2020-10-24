@@ -13,10 +13,10 @@ const About = () => (
         <img src={MormeiHeadshot}/>
       </Grid>
     </Grid>
-    <Grid container className="bio" spacing={2}>
-      <Grid item xs={12} sm={8}>
+    <Grid container className="copy">
+      <Grid item xs={12} sm={8} className="bio">
         <Text p>Mormei is a writer, artist and podcaster from Calgary, Alberta. She holds a Bachelor of Arts in English Literature and Creative Writing from UBC.</Text>
-        <Text>Compelled by stories, she employs various methods and processes to bring them to life. In her essays, poetry and audio journalism she looks for the narrative and follows it to the end.</Text>
+        <Text p>Compelled by stories, she employs various methods and processes to bring them to life. In her essays, poetry and audio journalism she looks for the narrative and follows it to the end.</Text>
       </Grid>
       <Grid item xs={2} sm={0} className="spacer"/>
       <Grid item xs={10} sm={4} className="acknowledgement">

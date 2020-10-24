@@ -2,17 +2,23 @@
 
 .homepage {
     .section {
-        padding-bottom: $lineHeightStatement*8;
         &.hero {
-            // font-family: $primaryFontOblique;
-            font-size: $fontSizeHero;
-            line-height: $lineHeightHero;
-            span {
-                color: pink;
+            // border-bottom: 2px solid $lightGray;
+            .hero-statement {
+                padding-bottom: $lineHeightHero*4;
+                font-size: $fontSizeHero;
+                line-height: $lineHeightHero;
+                span {
+                    color: pink;
+                }
+                @include breakpoint(xs) {
+                    font-size: $fontSizeHeroMobile;
+                    line-height: $lineHeightHeroMobile;
+                }
             }
-            @include breakpoint(xs) {
-                font-size: $fontSizeHeroMobile;
-                line-height: $lineHeightHeroMobile;
+            .hero-cta {
+                padding-bottom: $lineHeight;
+                color: pink;
             }
         }
     }
