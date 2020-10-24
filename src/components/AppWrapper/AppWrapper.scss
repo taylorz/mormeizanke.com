@@ -7,7 +7,7 @@
   @include breakpoint(xs) {
     padding: $buffer*4;
     &.nav-open {
-      overflow-y: hidden !important;
+      overflow-y: hidden;
     }
   }
   .wrapper-area {
