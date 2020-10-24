@@ -13,7 +13,7 @@ const About = () => (
         <img src={MormeiHeadshot}/>
       </Grid>
     </Grid>
-    <Grid container className="bio" spacing={3}>
+    <Grid container className="bio" spacing={2}>
       <Grid item xs={12} sm={8}>
         <Text p>Mormei is a writer, artist and podcaster from Calgary, Alberta. She holds a Bachelor of Arts in English Literature and Creative Writing from UBC.</Text>
         <Text>Compelled by stories, she employs various methods and processes to bring them to life. In her essays, poetry and audio journalism she looks for the narrative and follows it to the end.</Text>
