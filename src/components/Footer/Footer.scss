@@ -3,9 +3,6 @@
 .footer-container {
     position: absolute;
     bottom: $buffer*4;
-    @include breakpoint(xs) {
-        display: none;
-    }
     ul {
         list-style-type: none;
         padding: 0;

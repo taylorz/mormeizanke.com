@@ -30,7 +30,7 @@ export default () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
   return(
     <Router history={history}>
-      <AppWrapper className={mobileNavOpen && "nav-open"}>
+      <AppWrapper className={mobileNavOpen && "wrapper-nav-open"}>
         <Grid container>
           <Grid item xs={12} sm={2}>
             <Nav mobileNavOpen={mobileNavOpen} onClick={() => setMobileNavOpen(!mobileNavOpen)}/>

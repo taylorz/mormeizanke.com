@@ -5,9 +5,11 @@
   min-height: calc(100vh - #{$buffer*8});
   .content-container {
     margin-bottom: $lineHeightStatement*8;
+    @include breakpoint(xs) {
+    }
   }
   @include breakpoint(xs) {
-    padding-bottom: $lineHeightStatement*8;
+    min-height: calc(100vh - #{$buffer*20});
     font-size: $fontSizeStatementMobile;
     line-height: $lineHeightStatementMobile;
   }

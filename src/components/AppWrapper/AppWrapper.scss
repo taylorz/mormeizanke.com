@@ -2,12 +2,14 @@
 
 .app-wrapper {
   overflow-x: hidden;
+  overflow-y: scroll;
   height: 100vh;
   padding: $buffer*4;
   @include breakpoint(xs) {
     padding: $buffer*4;
-    &.nav-open {
+    &.wrapper-nav-open {
       overflow-y: hidden;
+      touch-action: none;
     }
   }
   .wrapper-area {
