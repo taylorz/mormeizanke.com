@@ -6,6 +6,9 @@
 @mixin transitionCubic {
   transition: $transitionCubic;
 }
+@mixin transitionCubicUrgent {
+  transition: $transitionCubicUrgent;
+}
 @mixin breakpoint($class) {
   @if $class == xs {
     @media (max-width: 599px) { @content; }

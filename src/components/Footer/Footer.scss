@@ -2,7 +2,7 @@
 
 .footer-container {
     position: absolute;
-    bottom: 0;
+    bottom: $buffer*4;
     ul {
         list-style-type: none;
         padding: 0;

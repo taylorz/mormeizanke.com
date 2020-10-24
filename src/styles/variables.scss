@@ -27,6 +27,7 @@ $easingCubic:                        cubic-bezier(0.77, 0, 0.175, 1);
 $easingRegular:                      ease-in-out;
 $transitionCubic:                    all $timing $easingCubic;
 $transitionRegular:                  all $timing $easingRegular;
+$transitionCubicUrgent:              all $timingUrgent $easingCubic;
 
 $delay1:                             .15s;
 $delay2:                             $delay1+$delay1;

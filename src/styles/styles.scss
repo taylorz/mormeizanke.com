@@ -36,13 +36,13 @@ body {
   }
   a {
     text-decoration: none;
-    @include transitionCubic;
+    @include transitionCubicUrgent;
     &:link {color: inherit;}
     &:visited {color: inherit;}
     &:hover {
       color: pink;
       cursor: pointer;
-      @include transitionCubic;
+      @include transitionCubicUrgent;
     }
     &:active {color: inherit;}
   }
