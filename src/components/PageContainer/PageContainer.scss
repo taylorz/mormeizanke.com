@@ -7,7 +7,7 @@
     margin-bottom: $lineHeightStatement*4;
   }
   @include breakpoint(xs) {
-    min-height: calc(100vh - #{$buffer*16});
+    min-height: calc(100vh - #{$buffer*20});
     font-size: $fontSizeStatementMobile;
     line-height: $lineHeightStatementMobile;
   }
