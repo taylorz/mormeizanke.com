@@ -19,4 +19,10 @@
     font-size: $fontSize;
     line-height: $lineHeight;
   }
+  .spacer {
+    display: none;
+    @include breakpoint(xs) {
+      display: flex;
+    }
+  }
 }//about
