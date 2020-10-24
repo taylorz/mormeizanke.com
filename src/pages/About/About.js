@@ -13,11 +13,13 @@ const About = () => (
         <img src={MormeiHeadshot}/>
       </Grid>
     </Grid>
-    <Grid container className="bio">
-      <Grid item xs={12}>
+    <Grid container className="bio" spacing={3}>
+      <Grid item xs={12} sm={8}>
         <Text p>Mormei is a writer, artist and podcaster from Calgary, Alberta. She holds a Bachelor of Arts in English Literature and Creative Writing from UBC.</Text>
-        <Text p>Compelled by stories, she employs various methods and processes to bring them to life. In her essays, poetry and audio journalism she looks for the narrative and follows it to the end.</Text>
-        <Text p>Mormei acknowledges the traditional territories of the Blackfoot Confederacy, on which she lives and works, including the Tsuut’ina, the Îyâxe Nakoda Nations, The Metis Nation (region 3), and all people from the Treaty 7 region of southern Alberta.</Text>
+        <Text>Compelled by stories, she employs various methods and processes to bring them to life. In her essays, poetry and audio journalism she looks for the narrative and follows it to the end.</Text>
+      </Grid>
+      <Grid item xs={12} sm={4} className="acknowledgement">
+        <Text>Mormei acknowledges the traditional territories of the Blackfoot Confederacy, on which she lives and works, including the Tsuut’ina, the Îyâxe Nakoda Nations, The Metis Nation (region 3), and all people from the Treaty 7 region of southern Alberta.</Text>
       </Grid>
     </Grid>
   </PageContainer>
