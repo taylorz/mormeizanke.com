@@ -27,12 +27,13 @@ const routes = [
 ]
 const history = createHistory()
 export default () => {
+  const [mobileNavOpen, setMobileNavOpen] = useState(false)
   return(
     <Router history={history}>
-      <AppWrapper>
+      <AppWrapper className={mobileNavOpen && "nav-open"}>
         <Grid container>
           <Grid item xs={12} sm={2}>
-            <Nav/>
+            <Nav mobileNavOpen={mobileNavOpen} onClick={() => setMobileNavOpen(!mobileNavOpen)}/>
           </Grid>
           <Grid item xs={12} sm={8}>
             <Route

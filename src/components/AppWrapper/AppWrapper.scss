@@ -6,6 +6,9 @@
   padding: $buffer*4;
   @include breakpoint(xs) {
     padding: $buffer*4;
+    &.nav-open {
+      overflow-y: hidden !important;
+    }
   }
   .wrapper-area {
     max-width: $md;
