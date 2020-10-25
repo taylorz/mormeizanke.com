@@ -2,7 +2,7 @@ import React from 'react';
 
 const REVIEWS = [
   {
-    title: <span>Life's Bizarre Realities: A Review of Stephanie Warner's <em>A Violet Streak</em></span>,
+    title: <span>Life's Bizarre Realities: A Review of Stephanie Warner's <em>A Violent Streak</em></span>,
     publication: "PRISM International",
     year: "2019",
     url: "http://prismmagazine.ca/2019/02/21/lifes-bizarre-realities-a-review-of-stephanie-warners-a-violent-streak/?fbclid=IwAR0DsF7m4M0SuNCe_uRu75Cn9jxPvI09-psy4nK9H76Bh3tvpa-eo6vWI4s",
