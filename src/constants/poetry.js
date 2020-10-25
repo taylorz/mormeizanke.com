@@ -1,22 +1,28 @@
+import React from 'react';
+import gondola from '../assets/works/poetry/gondola-hhr/HHR2.pdf';
+
 const POETRY = [
+  {
+    title: "Gondola",
+    publication: "The Hart House Review",
+    year: "2017",
+    url: gondola,
+    excerpt: <span>The Earth expands while I remain<br/>small.</span>
+  },
   {
     title: "What Colour is That?",
     publication: "The Maynard",
     year: "2016",
-    url: "https://www.themaynard.org/Vol9No2/WhatColourisThat.php"
+    url: "https://www.themaynard.org/Vol9No2/WhatColourisThat.php",
+    excerpt: <span>You point to a cloud<br/>on the horizon.</span>
   },
   {
     title: "12:33 AM",
     publication: "The Maynard",
     year: "2016",
-    url: "https://www.themaynard.org/Vol9No2/1233AM.php"
-  },
-  {
-    title: "Gondola",
-    publication: "The Hart House Review",
-    year: "2016",
-    url: ""
-  },
+    url: "https://www.themaynard.org/Vol9No2/1233AM.php",
+    excerpt: <span>We wait for busses<br/>at stops opposite<br/>each other.</span>
+  }
   
 ]
 

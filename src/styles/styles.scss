@@ -32,15 +32,17 @@ body {
   color: $fontColor;
   background: #ffffff;
   ::selection {
-    color: pink;
+    color: $sunshine;
   }
   a {
     text-decoration: none;
     @include transitionCubicUrgent;
-    &:link {color: inherit;}
+    &:link {
+      color: inherit;
+    }
     &:visited {color: inherit;}
     &:hover {
-      color: pink;
+      color: $sunshine;
       cursor: pointer;
       @include transitionCubicUrgent;
     }

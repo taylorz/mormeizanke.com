@@ -11,9 +11,14 @@ const Homepage = () => (
         Mormei writes <br/> draws records <br/> edits builds <br/> transmits<br/>stories.
       </Grid>
       {/* <Grid item xs={12} className="hero-cta">
-        <Link to="/about">New site who dis?</Link>
+        <Link to="/about">Learn about me</Link>
       </Grid> */}
     </Grid>
+    {/* <Grid container className="section featured">
+      <Grid item xs={12} sm={4}>
+        Read about my poetry
+      </Grid>
+    </Grid> */}
   </PageContainer>
 )
 

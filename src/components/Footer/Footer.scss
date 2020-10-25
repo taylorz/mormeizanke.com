@@ -3,6 +3,9 @@
 .footer-container {
     position: absolute;
     bottom: $buffer*4;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $fontColorLight;
     ul {
         list-style-type: none;
         padding: 0;

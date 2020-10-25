@@ -21,10 +21,17 @@
   }
   .favorite {
     @include transitionCubic;
-    color: pink;
+    color: $sunshine;
     margin-left: $buffer*8;
     @include breakpoint(xs) {
       margin: 0;
     }
+  }
+  .excerpt {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    border-left: 2px solid $lightGray;
+    padding-left: $buffer*3;
+    color: $fontColorLight;
   }
 }

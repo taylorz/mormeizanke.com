@@ -2,23 +2,21 @@
 
 .homepage {
     .section {
+        // border-bottom: 2px solid $lightGray;
+        // margin-bottom: $lineHeightStatement;
+        // padding-bottom: $lineHeight;
         &.hero {
-            // border-bottom: 2px solid $lightGray;
             .hero-statement {
-                padding-bottom: $lineHeightHero*4;
                 font-size: $fontSizeHero;
                 line-height: $lineHeightHero;
-                span {
-                    color: pink;
-                }
+                color: $sunshine;
                 @include breakpoint(xs) {
                     font-size: $fontSizeHeroMobile;
                     line-height: $lineHeightHeroMobile;
                 }
             }
             .hero-cta {
-                padding-bottom: $lineHeight;
-                color: pink;
+                color: $fontColorLight;
             }
         }
     }
