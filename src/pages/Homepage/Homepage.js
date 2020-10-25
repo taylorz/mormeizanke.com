@@ -3,6 +3,7 @@ import './Homepage.scss';
 import Grid from '@material-ui/core/Grid';
 import { Link } from "react-router-dom";
 import PageContainer from '../../components/PageContainer/PageContainer';
+import MormeiHeadshot from '../../assets/images/mormei-image.png';
 
 const Homepage = () => (
   <PageContainer className="homepage">
