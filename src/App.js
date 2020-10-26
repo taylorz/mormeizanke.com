@@ -33,7 +33,7 @@ export default () => {
       <AppWrapper className={mobileNavOpen && "wrapper-nav-open"}>
         <Grid container>
           <Grid item xs={12} sm={2}>
-            <Nav mobileNavOpen={mobileNavOpen} onClick={() => setMobileNavOpen(!mobileNavOpen)}/>
+            <Nav mobileNavOpen={mobileNavOpen} closeNav={() => setMobileNavOpen(false)} openNav={() => setMobileNavOpen(true)} toggleNav={() => setMobileNavOpen(!mobileNavOpen)}/>
           </Grid>
           <Grid item xs={12} sm={8}>
             <Route
