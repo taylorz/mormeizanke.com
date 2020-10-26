@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Nav.scss'
 import Grid from '@material-ui/core/Grid';
 import { NavLink} from "react-router-dom";
