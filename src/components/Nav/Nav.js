@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import { NavLink} from "react-router-dom";
 import Hamburger from 'hamburger-react'
 
-const Nav = ({mobileNavOpen, closeNav, openNav, toggleNav}) => {
+const Nav = ({mobileNavOpen, closeNav, toggleNav}) => {
     return (
         <Grid container className={`nav-container ${mobileNavOpen && "nav-open"}`} justify="space-between">
             <Grid item>

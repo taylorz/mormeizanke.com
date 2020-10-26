@@ -1,10 +1,9 @@
-import React, { Component, useState, useEffect }  from 'react';
+import React, { useState }  from 'react';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Grid from '@material-ui/core/Grid';
 import AppWrapper from './components/AppWrapper/AppWrapper'
 import Nav from './components/Nav/Nav'
-import Footer from './components/Footer/Footer'
 import Homepage from './pages/Homepage/Homepage';
 import Poetry from './pages/Poetry/Poetry';
 import Essays from './pages/Essays/Essays';
@@ -33,7 +32,7 @@ export default () => {
       <AppWrapper className={mobileNavOpen && "wrapper-nav-open"}>
         <Grid container>
           <Grid item xs={12} sm={2}>
-            <Nav mobileNavOpen={mobileNavOpen} closeNav={() => setMobileNavOpen(false)} openNav={() => setMobileNavOpen(true)} toggleNav={() => setMobileNavOpen(!mobileNavOpen)}/>
+            <Nav mobileNavOpen={mobileNavOpen} closeNav={() => setMobileNavOpen(false)} toggleNav={() => setMobileNavOpen(!mobileNavOpen)}/>
           </Grid>
           <Grid item xs={12} sm={8}>
             <Route
