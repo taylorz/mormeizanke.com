@@ -9,6 +9,10 @@
   }
   .pod-description {
     margin: $lineHeightStatement 0;
+    @include breakpoint (xs) {
+      margin-top: $lineHeightStatement;
+      margin-bottom: 0;
+    }
   }
   .episodes {
     border-left: 2px solid $fontColorLight;
