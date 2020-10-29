@@ -20,13 +20,15 @@ const Podcasts = () => (
           <Text p>Together they investigate creative questions, decisively or uncertainly— but always catching up at the end of each call.</Text> 
           <Grid container className="episodes">
             <Grid item>
-              <Text className="episode-title"><a href="https://podcasts.apple.com/ca/podcast/social-media-monster/id1537335104?i=1000496033339" target="_blank">Episode 1: Social Media...Monster? <span className="available">Listen Now</span></a></Text>
+              <Text className="episode-title"><a href="https://podcasts.apple.com/ca/podcast/social-media-monster/id1537335104?i=1000496033339" target="_blank">Episode 1: Social Media...Monster? <span className="available">Listen on Apple Podcasts</span></a></Text>
               <Grid container className="pod-description">
                 <Grid item xs={12} sm={12}>
-                  Mormei makes her first creativity call to longtime friend, Rachel Li. They discuss Rachel’s artistic process and the launch of her business, Water & Color Vintage. Plus, they delve into the world of social media—does it help or hinder creativity?
+                  <Text p>Mormei makes her first creativity call to longtime friend, Rachel Li. They discuss Rachel’s artistic process and the launch of her business, Water & Color Vintage. Plus, they delve into the world of social media—does it help or hinder creativity?</Text>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <Episode1/>
                 </Grid>
               </Grid>
-              {/* <Episode1/> */}
               <Text>Episode 2: Coming Soon</Text>
               <Text>Episode 3: Coming Soon</Text>
               <Text>Episode 4: Coming Soon</Text>
