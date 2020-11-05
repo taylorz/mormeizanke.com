@@ -29,7 +29,7 @@ const Podcasts = () => (
                   <Episode1/>
                 </Grid>
               </Grid>
-              <Text className="episode-title"><a href="https://podcasts.apple.com/ca/podcast/creativity-calls/id1537335104" target="_blank">Episode 2: Preserving Moments <span className="available">Listen on Apple Podcasts</span></a></Text>
+              <Text className="episode-title"><a href="https://podcasts.apple.com/ca/podcast/preserving-moments/id1537335104?i=1000497318393" target="_blank">Episode 2: Preserving Moments <span className="available">Listen on Apple Podcasts</span></a></Text>
               <Grid container className="pod-description">
                 <Grid item xs={12} sm={12}>
                   <Text p>Mormei reconnects with her former radio co-host, Brandon Rivas. They take a walk down memory lane and reminisce about their days in advice radio. Later, they discuss Brandon’s career in curation and restoration as well as his fascination with preserving objects.</Text>
