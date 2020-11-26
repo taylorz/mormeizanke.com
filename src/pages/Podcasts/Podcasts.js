@@ -60,7 +60,17 @@ const Podcasts = () => (
                   <Episode4/>
                 </Grid>
               </Grid>
-              <Text>Episode 5: Coming Soon</Text>
+
+              <Text className="episode-title"><a href="https://podcasts.apple.com/ca/podcast/interior-lives/id1537335104?i=1000500311931" target="_blank">Episode 5: Interior Lives <span className="available">Listen on Apple Podcasts</span></a></Text>
+              <Grid container className="pod-description">
+                <Grid item xs={12} sm={12}>
+                  <Text p>Poet and writer, Alison Braid, joins Mormei to talk about her recently published chapbook of poems, Little Hunches. They get into the specifics of the process of writing and rewriting, as well as the role interiority can play in developing rich stories. Plus, they make a case for letter-writing in modern times</Text>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <Episode5/>
+                </Grid>
+              </Grid>
+
               <Text>Episode 6: Coming Soon</Text>
             </Grid>
 
@@ -85,4 +95,7 @@ const Episode3 = () => (
 )
 const Episode4 = () => (
   <iframe title="Back to Nature" frameBorder="0" height="122" width="100%" style={{border: "none;"}} scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/media/player/aicvz-f2a75b?from=pb6admin&download=1&version=1&auto=0&share=1&download=1&rtl=0&fonts=Helvetica&skin=1&pfauth=&btn-skin=102"></iframe>
+)
+const Episode5 = () => (
+  <iframe title="Interior Lives" frameBorder="0" width="100%" style={{border: "none;"}} scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/media/player/fj66s-f34d64?from=pb6admin&download=1&version=1&auto=0&share=1&download=1&rtl=0&fonts=Helvetica&skin=1&pfauth=&btn-skin=102"></iframe>
 )
