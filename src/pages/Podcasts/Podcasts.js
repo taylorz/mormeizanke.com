@@ -64,7 +64,7 @@ const Podcasts = () => (
               <Text className="episode-title"><a href="https://podcasts.apple.com/ca/podcast/interior-lives/id1537335104?i=1000500311931" target="_blank">Episode 5: Interior Lives <span className="available">Listen on Apple Podcasts</span></a></Text>
               <Grid container className="pod-description">
                 <Grid item xs={12} sm={12}>
-                  <Text p>Poet and writer, Alison Braid, joins Mormei to talk about her recently published chapbook of poems, Little Hunches. They get into the specifics of the process of writing and rewriting, as well as the role interiority can play in developing rich stories. Plus, they make a case for letter-writing in modern times</Text>
+                  <Text p>Poet and writer, Alison Braid, joins Mormei to talk about her recently published chapbook of poems, Little Hunches. They get into the specifics of the process of writing and rewriting, as well as the role interiority can play in developing rich stories. Plus, they make a case for letter-writing in modern times.</Text>
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <Episode5/>
