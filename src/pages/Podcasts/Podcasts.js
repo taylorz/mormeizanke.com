@@ -71,7 +71,16 @@ const Podcasts = () => (
                 </Grid>
               </Grid>
 
-              <Text>Episode 6: Coming Soon</Text>
+              <Text className="episode-title"><a href="https://podcasts.apple.com/ca/podcast/keep-the-mystery/id1537335104?i=1000501214411" target="_blank">Episode 6: Keep The Mystery <span className="available">Listen on Apple Podcasts</span></a></Text>
+              <Grid container className="pod-description">
+                <Grid item xs={12} sm={12}>
+                  <Text p>In the last episode of the season, Mormei calls her friend, Michelle Ku, from the other side of the Atlantic. They talk about Michelle’s career as a 2D animator, her artistic journey, and where she looks for inspiration. Later, they compare story planning techniques and why they prefer spontaneity over detailed mapping.</Text>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <Episode5/>
+                </Grid>
+              </Grid>
+
             </Grid>
 
           </Grid>
@@ -97,5 +106,8 @@ const Episode4 = () => (
   <iframe title="Back to Nature" frameBorder="0" height="122" width="100%" style={{border: "none;"}} scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/media/player/aicvz-f2a75b?from=pb6admin&download=1&version=1&auto=0&share=1&download=1&rtl=0&fonts=Helvetica&skin=1&pfauth=&btn-skin=102"></iframe>
 )
 const Episode5 = () => (
-  <iframe title="Interior Lives" frameBorder="0" width="100%" style={{border: "none;"}} scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/media/player/fj66s-f34d64?from=pb6admin&download=1&version=1&auto=0&share=1&download=1&rtl=0&fonts=Helvetica&skin=1&pfauth=&btn-skin=102"></iframe>
+  <iframe title="Interior Lives" frameBorder="0" height="122" width="100%" style={{border: "none;"}} scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/media/player/fj66s-f34d64?from=pb6admin&download=1&version=1&auto=0&share=1&download=1&rtl=0&fonts=Helvetica&skin=1&pfauth=&btn-skin=102"></iframe>
+)
+const Episode6 = () => (
+  <iframe title="Keep The Mystery" frameBorder="0" height="122" width="100%" style={{border: "none;"}} scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/media/player/r2vpq-f3e5d9?from=pb6admin&download=1&version=1&auto=0&share=1&download=1&rtl=0&fonts=Helvetica&skin=1&pfauth=&btn-skin=102"></iframe>
 )
