@@ -77,7 +77,7 @@ const Podcasts = () => (
                   <Text p>In the last episode of the season, Mormei calls her friend, Michelle Ku, from the other side of the Atlantic. They talk about Michelle’s career as a 2D animator, her artistic journey, and where she looks for inspiration. Later, they compare story planning techniques and why they prefer spontaneity over detailed mapping.</Text>
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                  <Episode5/>
+                  <Episode6/>
                 </Grid>
               </Grid>
 
