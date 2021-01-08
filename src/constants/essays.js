@@ -1,5 +1,12 @@
 const ESSAYS = [
   {
+    title: "The Polka Dot Pumpkin of Naoshima Island",
+    publication: "Kyoto Journal",
+    year: "2020",
+    url: "https://kyotojournal.org/product/kyoto-journal-issue-99-travel-revisited-digital/",
+    excerpt: "In April 2019, my mother and I traveled to visit a yellow polka dot pumpkin on Naoshima Island, Kagawa, Japan."
+  },
+  {
     title: "The Sopron Story: Looking back 60 years later",
     publication: "UBC Now",
     year: "2018",
