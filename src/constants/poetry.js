@@ -3,6 +3,13 @@ import gondola from '../assets/works/poetry/gondola-hhr/HHR2.pdf';
 
 const POETRY = [
   {
+    title: "Kobe City",
+    publication: "Juniper",
+    year: "2021",
+    url: "https://juniperpoetry.com/kobe-city-by-mormei-zanke/",
+    excerpt: <span>We took a funicular ride up the mountains<br/>behind Kobe City, hoping to see infinity</span>
+  },
+  {
     title: "Gondola",
     publication: "The Hart House Review",
     year: "2017",
