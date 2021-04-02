@@ -3,6 +3,13 @@ import gondola from '../assets/works/poetry/gondola-hhr/HHR2.pdf';
 
 const POETRY = [
   {
+    title: "New Moon",
+    publication: "Humana Obscura",
+    year: "2021",
+    url: "https://issuu.com/humanaobscura/docs/humanaobscura_issue2_digital/124",
+    excerpt: <span>Look up</span>
+  },
+  {
     title: "Kobe City",
     publication: "Juniper",
     year: "2021",
@@ -28,9 +35,9 @@ const POETRY = [
     publication: "The Maynard",
     year: "2016",
     url: "https://www.themaynard.org/Vol9No2/1233AM.php",
-    excerpt: <span>We wait for busses<br/>at stops opposite<br/>each other.</span>
+    excerpt: <span>We wait for buses<br/>at stops opposite<br/>each other.</span>
   }
-  
+
 ]
 
 export default POETRY;
