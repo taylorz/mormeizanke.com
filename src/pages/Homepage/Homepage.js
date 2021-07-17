@@ -7,7 +7,13 @@ const Homepage = () => (
   <PageContainer className="homepage">
     <Grid container className="section hero">
       <Grid item xs={12} className="hero-statement">
-        Mormei writes <br/> draws records <br/> edits builds <br/> transmits<br/>stories.
+        A bright and<br />
+        steady fixture<br />
+        against the blue<br />
+        undulating sea.
+      </Grid>
+      <Grid item xs={12} className="hero-reference">
+        &mdash;excerpt from "The Polka Dot Pumpkin of Naoshima Island"
       </Grid>
     </Grid>
   </PageContainer>

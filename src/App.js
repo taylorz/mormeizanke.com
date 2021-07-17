@@ -5,24 +5,20 @@ import Grid from '@material-ui/core/Grid';
 import AppWrapper from './components/AppWrapper/AppWrapper'
 import Nav from './components/Nav/Nav'
 import Homepage from './pages/Homepage/Homepage';
-import Poetry from './pages/Poetry/Poetry';
-import Essays from './pages/Essays/Essays';
-import Podcasts from './pages/Podcasts/Podcasts';
-import Reviews from './pages/Reviews/Reviews';
-import Drawings from './pages/Drawings/Drawings';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
+import Journalism from './pages/Journalism/Journalism';
+import Poetry from './pages/Poetry/Poetry';
+import Audio from './pages/Audio/Audio';
 import createHistory from 'history/createBrowserHistory'
 
 const routes = [
   { path: '/', name: 'Home', Component: Homepage },
   { path: '/about', name: 'About', Component: About },
   { path: '/contact', name: 'Contact', Component: Contact },
+  { path: '/journalism', name: 'Journalism', Component: Journalism },
   { path: '/poetry', name: 'Poetry', Component: Poetry },
-  { path: '/essays', name: 'Essays', Component: Essays },
-  { path: '/podcasts', name: 'Podcasts', Component: Podcasts },
-  { path: '/reviews', name: 'Reviews', Component: Reviews },
-  // { path: '/drawings', name: 'Drawings', Component: Drawings },
+  { path: '/audio', name: 'Audio', Component: Audio },
 ]
 const history = createHistory()
 export default () => {
@@ -42,10 +38,10 @@ export default () => {
                 return(
                   <TransitionGroup component={null}>
                       <CSSTransition
-                      key={key}
-                      appear={true}
-                      classNames="my-node"
-                      timeout={{enter: 1500, exit: 500}}
+                        key={key}
+                        appear={true}
+                        classNames="my-node"
+                        timeout={{enter: 1500, exit: 500}}
                       >
                       <Switch location={location}>
                         {routes.map(({ path, Component }) => (
@@ -60,7 +56,7 @@ export default () => {
                       </Switch>
                     </CSSTransition>
                   </TransitionGroup>
-                )    
+                )
               }}
             />
           </Grid>

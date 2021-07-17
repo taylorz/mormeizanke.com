@@ -1,12 +1,12 @@
 import React from 'react';
-import './Podcasts.scss'
+import './Audio.scss'
 import Grid from '@material-ui/core/Grid';
 import PageContainer from '../../components/PageContainer/PageContainer';
 import Text from '../../components/Text/Text';
 import creativityCalls from '../../assets/images/creativity-calls.JPG';
 
-const Podcasts = () => (
-  <PageContainer className="podcasts">
+const Audio = () => (
+  <PageContainer className="audio">
       <Grid container>
         <Grid item xs={2} sm={1}>2020</Grid>
         <Grid item xs={10} sm={11}>
@@ -16,11 +16,11 @@ const Podcasts = () => (
               <img src={creativityCalls}/>
             </Grid>
           </Grid>
-          <Text p>Join, Mormei, as she calls up her friends who are artists, poets, musicians, cartoonists, architects, and anthropologists—all finding meaning in their private corner of the world.</Text> 
-          <Text p>Together they investigate creative questions, decisively or uncertainly— but always catching up at the end of each call.</Text> 
+          <Text p>Join, Mormei, as she calls up her friends who are artists, poets, musicians, cartoonists, architects, and anthropologists—all finding meaning in their private corner of the world.</Text>
+          <Text p>Together they investigate creative questions, decisively or uncertainly— but always catching up at the end of each call.</Text>
           <Grid container className="episodes">
             <Grid item>
-              
+
               <Text className="episode-title"><a href="https://podcasts.apple.com/ca/podcast/social-media-monster/id1537335104?i=1000496033339" target="_blank">Episode 1: Social Media...Monster? <span className="available">Listen on Apple Podcasts</span></a></Text>
               <Grid container className="pod-description">
                 <Grid item xs={12} sm={12}>
@@ -91,7 +91,7 @@ const Podcasts = () => (
   </PageContainer>
 )
 
-export default Podcasts;
+export default Audio;
 
 const Episode1 = () => (
   <iframe title="Social Media...Monster?" frameBorder="0" height="122" width="100%" style={{border: "none;"}} scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/media/player/x47f8-f05b05?from=pb6admin&download=1&version=1&auto=0&share=1&download=1&rtl=0&fonts=Helvetica&skin=1&pfauth=&btn-skin=102"></iframe>

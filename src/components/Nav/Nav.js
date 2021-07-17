@@ -18,10 +18,9 @@ const Nav = ({mobileNavOpen, closeNav, toggleNav}) => {
                             <li><NavLink onClick={closeNav} className="nav-link" to="/contact" activeClassName="active">Contact</NavLink></li>
                         </ul>
                         <ul>
+                            <li><NavLink onClick={closeNav} className="nav-link" to="/journalism" activeClassName="active">Journalism</NavLink></li>
                             <li><NavLink onClick={closeNav} className="nav-link" to="/poetry" activeClassName="active">Poetry</NavLink></li>
-                            <li><NavLink onClick={closeNav} className="nav-link" to="/essays" activeClassName="active">Essays</NavLink></li>
-                            <li><NavLink onClick={closeNav} className="nav-link" to="/reviews" activeClassName="active">Reviews</NavLink></li>
-                            <li><NavLink onClick={closeNav} className="nav-link" to="/podcasts" activeClassName="active">Podcasts</NavLink></li>
+                            <li><NavLink onClick={closeNav} className="nav-link" to="/audio" activeClassName="active">Audio</NavLink></li>
                             {/* <li><NavLink onClick={() => setMobileNavOpen(false)} className="nav-link" to="/drawings" activeClassName="active">Drawings</NavLink></li> */}
                         </ul>
                     </div>

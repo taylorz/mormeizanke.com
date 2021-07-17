@@ -1,13 +1,13 @@
 import React from 'react';
-import './Reviews.scss';
+import './Journalism.scss';
 import PageContainer from '../../components/PageContainer/PageContainer';
 import WritingItem from '../../components/WritingItem/WritingItem';
 
-import REVIEWS from '../../constants/reviews';
+import JOURNALISM from '../../constants/journalism';
 
-const Reviews = () => (
-  <PageContainer className="reviews">
-    {REVIEWS.map((p) => 
+const Journalism = () => (
+  <PageContainer className="journalism">
+    {JOURNALISM.map((p) =>
       <WritingItem
         writing={p}
       />
@@ -15,4 +15,4 @@ const Reviews = () => (
   </PageContainer>
 )
 
-export default Reviews;
+export default Journalism;
