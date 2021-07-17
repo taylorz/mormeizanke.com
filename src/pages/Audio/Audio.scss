@@ -1,0 +1,41 @@
+@import "../../styles/styles.scss";
+
+.audio {
+  .pod-thumb {
+    margin-bottom: $lineHeightStatement;
+    img {
+      width: 100%;
+    }
+  }
+  .pod-description {
+    margin: $lineHeightStatement 0;
+    @include breakpoint (xs) {
+      margin-top: $lineHeightStatement;
+      margin-bottom: 0;
+    }
+  }
+  .episodes {
+    border-left: 2px solid $fontColorLight;
+    padding-left: $buffer*4;
+    margin-bottom: $lineHeightStatement;
+    .episode-title {
+      &:hover {
+        .available {
+          margin-left: $buffer*8;
+          @include transitionCubicUrgent;
+          @include breakpoint(xs) {
+            margin-left: 0;
+          }
+        }
+      }
+      .available {
+        @include transitionCubicUrgent;
+        color: $sunshine;
+        margin-left: $buffer*4;
+        @include breakpoint(xs) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

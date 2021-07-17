@@ -2,7 +2,7 @@
 
 .page-container {
   position: absolute;
-  min-height: calc(100vh - #{$buffer*4});
+  min-height: calc(100vh - #{$buffer*8});
   .content-container {
     margin-bottom: $lineHeightStatement*4;
   }

@@ -1,7 +1,37 @@
 import React from 'react';
 import gondola from '../assets/works/poetry/gondola-hhr/HHR2.pdf';
+import onceManyTimes from '../assets/works/poetry/new-forum-once-many-times/NewForum_OnceManyTimes.pdf';
+import rabbit from '../assets/works/poetry/new-forum-rabbit/NewForum_Rabbit.pdf';
 
 const POETRY = [
+  {
+    title: "Thinking of Him While Painting My Nails “Mademoiselle” Pink",
+    publication: "NōD Magazine",
+    year: "2021",
+    url: "https://nodmagazine.wordpress.com/",
+    excerpt: <span>If I went to France today, would I be <br />called mademoiselle?</span>
+  },
+  {
+    title: "Notes on Mirtazapine",
+    publication: "NōD Magazine",
+    year: "2021",
+    url: "https://nodmagazine.wordpress.com/",
+    excerpt: <span>I used to think about death, now I think about donuts.</span>
+  },
+  {
+    title: "Once Many Times",
+    publication: "New Forum",
+    year: "2021",
+    url: onceManyTimes,
+    excerpt: <span>I walk one thousand steps one thousand times one thousand</span>
+  },
+  {
+    title: "You are the Man and I am the Rabbit",
+    publication: "New Forum",
+    year: "2021",
+    url: rabbit,
+    excerpt: <span>on the moon. Two shapes</span>
+  },
   {
     title: "New Moon",
     publication: "Humana Obscura",

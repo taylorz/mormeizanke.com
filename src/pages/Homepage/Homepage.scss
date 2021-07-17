@@ -9,11 +9,17 @@
             .hero-statement {
                 font-size: $fontSizeHero;
                 line-height: $lineHeightHero;
-                color: $sunshine;
+                color: $fontColor;
                 @include breakpoint(xs) {
                     font-size: $fontSizeHeroMobile;
                     line-height: $lineHeightHeroMobile;
                 }
+            }
+            .hero-reference {
+              font-size: $fontSize;
+              line-height: $lineHeight;
+              color: $fontColorLight;
+              margin-top: calc((#{$lineHeight}*2));
             }
             .hero-cta {
                 color: $fontColorLight;
