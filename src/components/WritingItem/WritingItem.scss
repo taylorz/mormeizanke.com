@@ -30,8 +30,13 @@
   .excerpt {
     font-size: $fontSize;
     line-height: $lineHeight;
-    border-left: 2px solid $lightGray;
+    border-left: 2px solid $fontColorLight;
     padding-left: $buffer*3;
     color: $fontColorLight;
+  }
+  .statement {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    margin-top: $buffer*4;
   }
 }

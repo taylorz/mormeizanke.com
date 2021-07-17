@@ -4,7 +4,7 @@
   overflow-x: hidden;
   overflow-y: scroll;
   height: 100vh;
-  padding: $buffer*4;
+  padding: $buffer*8;
   @include breakpoint(xs) {
     padding: $buffer*4;
     &.wrapper-nav-open {

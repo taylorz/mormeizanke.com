@@ -1,3 +1,5 @@
+import React from 'react';
+
 const JOURNALISM = [
   {
     title: "The Polka Dot Pumpkin of Naoshima Island",
@@ -7,11 +9,25 @@ const JOURNALISM = [
     excerpt: "In April 2019, my mother and I traveled to visit a yellow polka dot pumpkin on Naoshima Island, Kagawa, Japan."
   },
   {
+    title: <span>Life's Bizarre Realities: A Review of Stephanie Warner's <em>A Violent Streak</em></span>,
+    publication: "PRISM International",
+    year: "2019",
+    url: "http://prismmagazine.ca/2019/02/21/lifes-bizarre-realities-a-review-of-stephanie-warners-a-violent-streak/",
+    excerpt: <span>Stephanie Warner’s debut poetry collection <em>A Violent Streak</em> begins with a question: “Or is it a seam?” (15).</span>
+  },
+  {
     title: "The Sopron Story: Looking back 60 years later",
     publication: "UBC Now",
     year: "2018",
     url: "https://www.ubc.ca/ubc-now/2018/the-sopron-story.html",
     excerpt: "Chances are, you know someone who has immigrated to Canada from another part of the world."
+  },
+  {
+    title: <span>Redefining Home: A Review of Chelene Knight's <em>Dear Current Occupant</em></span>,
+    publication: "PRISM International",
+    year: "2018",
+    url: "http://prismmagazine.ca/2018/07/05/redefining-home-a-review-of-chelene-knights-dear-current-occupant/",
+    excerpt: <span>Chelene Knight’s new memoir <em>Dear Current Occupant</em>, defies traditional genres of writing through its inherent hybridity and fragmentation.</span>
   },
   {
     title: "Secrets of the Mind: The Drawings of Santiago Ramon y Cajal",
@@ -20,20 +36,6 @@ const JOURNALISM = [
     url: "https://www.ubc.ca/ubc-now/2017/#secrets-of-the-mind",
     excerpt: "The human brain — how much do you really know about the organ responsible for all your motor functions, thoughts, even your feelings?"
   },
-  // {
-  //   title: "Rediscovering our Roots: The UBC Tree-Planting Ceremony",
-  //   publication: "UBC Now",
-  //   year: "2017",
-  //   url: "https://www.ubc.ca/ubc-now/2017/#grad-trees",
-  //   excerpt: "It’s hard not to notice the trees. UBC Vancouver’s campus is home to some 8,000 planted trees and more than 10,000 native trees."
-  // },
-  // {
-  //   title: "The Arts One Program: Celebrating 50 Years of Innovative Teaching in the Arts",
-  //   publication: "UBC Now",
-  //   year: "2017",
-  //   url: "https://www.ubc.ca/ubc-now/2017/#arts-one-program",
-  //   excerpt: "Arts One began with a bold vision to reimagine the incoming student experience in the Faculty of Arts. Founded in 1967, the peer focused, rigorous first-year arts program will celebrate its 50th anniversary in 2017.",
-  // },
   {
     title: "Emily Carr's Corresponding Letters",
     publication: "UBC Blogs",
@@ -41,13 +43,6 @@ const JOURNALISM = [
     url: "https://blogs.ubc.ca/emilycarrletters/author/mormei-zanke/",
     excerpt: "You’ve probably heard of Emily. Maybe you’ve seen some of her paintings on display, stood before Big Raven, lost in its waves of green and purple, taken by the seemingly endless nature of Carr’s strokes."
   },
-  // {
-  //   title: "From Seed to Science",
-  //   publication: "UBC.ca",
-  //   year: "2016",
-  //   url: "https://www.ubc.ca/stories/2016-summer/botanical-garden/",
-  //   excerpt: "A few steps into the UBC Botanical Garden, you’re met with trees on all sides. They stretch upwards into the sky, arching in every direction."
-  // },
 ]
 
 export default JOURNALISM;
