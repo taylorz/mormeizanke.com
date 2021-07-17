@@ -1,7 +1,7 @@
 import React from 'react';
 import './Nav.scss'
 import Grid from '@material-ui/core/Grid';
-import { NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Hamburger from 'hamburger-react'
 
 const Nav = ({mobileNavOpen, closeNav, toggleNav}) => {
@@ -21,7 +21,6 @@ const Nav = ({mobileNavOpen, closeNav, toggleNav}) => {
                             <li><NavLink onClick={closeNav} className="nav-link" to="/journalism" activeClassName="active">Journalism</NavLink></li>
                             <li><NavLink onClick={closeNav} className="nav-link" to="/poetry" activeClassName="active">Poetry</NavLink></li>
                             <li><NavLink onClick={closeNav} className="nav-link" to="/audio" activeClassName="active">Audio</NavLink></li>
-                            {/* <li><NavLink onClick={() => setMobileNavOpen(false)} className="nav-link" to="/drawings" activeClassName="active">Drawings</NavLink></li> */}
                         </ul>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './Homepage.scss';
 import Grid from '@material-ui/core/Grid';
 import PageContainer from '../../components/PageContainer/PageContainer';
@@ -13,7 +14,7 @@ const Homepage = () => (
         undulating sea.
       </Grid>
       <Grid item xs={10} sm={12} className="hero-reference">
-        &mdash;excerpt from "The Polka Dot Pumpkin of Naoshima Island"
+        <Link to="/journalism">&mdash;excerpt from "The Polka Dot Pumpkin of Naoshima Island"</Link>
       </Grid>
     </Grid>
   </PageContainer>
