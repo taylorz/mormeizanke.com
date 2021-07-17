@@ -1,4 +1,6 @@
 import React from 'react';
+import sopronStory from '../assets/works/journalism/sopron-story/SopronStory.pdf';
+import SecretsOfTheMind from '../assets/works/journalism/secrets-of-the-mind/RamonStory.pdf';
 
 const JOURNALISM = [
   {
@@ -19,7 +21,7 @@ const JOURNALISM = [
     title: "The Sopron Story: Looking back 60 years later",
     publication: "UBC Now",
     year: "2018",
-    url: "https://www.ubc.ca/ubc-now/2018/the-sopron-story.html",
+    url: sopronStory,
     excerpt: "Chances are, you know someone who has immigrated to Canada from another part of the world."
   },
   {
@@ -33,7 +35,7 @@ const JOURNALISM = [
     title: "Secrets of the Mind: The Drawings of Santiago Ramon y Cajal",
     publication: "UBC Now",
     year: "2017",
-    url: "https://www.ubc.ca/ubc-now/2017/#secrets-of-the-mind",
+    url: SecretsOfTheMind,
     excerpt: "The human brain — how much do you really know about the organ responsible for all your motor functions, thoughts, even your feelings?"
   },
   {

@@ -12,7 +12,7 @@ const Homepage = () => (
         against the blue<br />
         undulating sea.
       </Grid>
-      <Grid item xs={12} className="hero-reference">
+      <Grid item xs={10} sm={12} className="hero-reference">
         &mdash;excerpt from "The Polka Dot Pumpkin of Naoshima Island"
       </Grid>
     </Grid>
