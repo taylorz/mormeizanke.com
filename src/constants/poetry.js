@@ -5,6 +5,13 @@ import rabbit from '../assets/works/poetry/new-forum-rabbit/NewForum_Rabbit.pdf'
 
 const POETRY = [
   {
+    title: "Okinawa",
+    publication: "The Windsor Review",
+    year: "2021",
+    url: "https://ojs.uwindsor.ca/index.php/windsor_review/issue/view/694/204",
+    excerpt: <span>We flew to Okinawa for the weekend.<br />I let you drive on the other side</span>
+  },
+  {
     title: "Thinking of Him While Painting My Nails “Mademoiselle” Pink",
     publication: "NōD Magazine",
     year: "2021",
