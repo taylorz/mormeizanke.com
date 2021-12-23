@@ -1,0 +1,22 @@
+@import "../../styles/styles.scss";
+
+.text {
+    margin: 0;
+    &.headline {
+        font-size: $fontSizeHero;
+        line-height: $lineHeightHero;
+        @include breakpoint(xs) {
+            font-size: $fontSizeHeroMobile;
+            line-height: $lineHeightHeroMobile;
+        }
+    }
+    &.italic {
+        font-family: $primaryFontOblique;
+    }
+    &.paragraph {
+        margin-bottom: $lineHeight;
+    }
+    &.inline {
+        display: inline;
+    }
+}
