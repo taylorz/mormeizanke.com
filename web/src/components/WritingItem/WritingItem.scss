@@ -10,8 +10,17 @@
     }
   }
   .title {
-    font-size: $fontSizeHero;
-    line-height: $lineHeightHero;
+    font-size: $fontSizeStatement;
+    line-height: $lineHeightStatement;
+    p {
+      margin: 0;
+    }
+  }
+  .description {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    // color: $fontColorLight;
+    margin-top: $buffer*2;
   }
   .year {
     margin-right: $buffer*4;

@@ -5,40 +5,42 @@ import sanityClient from '../../client'
 import PageContainer from '../../components/PageContainer/PageContainer';
 import WritingItem from '../../components/WritingItem/WritingItem';
 
-import JOURNALISM from '../../constants/journalism';
-
 const Journalism = () => {
-  const [allPostsData, setAllPosts] = useState(null)
+  const [journalismWorks, setJournalismWorks] = useState(null)
 
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == 'post' &&
-            *[_type == "category" &&
-              title == "Journalism"][0]._id in categories[]._ref]{
-                body,
-                title,
-                slug,
-        }`
+        `
+          *[_type == "work" && references(*[_type=="category" && title == 'Journalism']._id)
+          ] | order(year desc) { ..., publication-> }
+          {
+            title,
+            link,
+            year,
+            description,
+            publication
+          }
+        `
       )
-      .then((data) => setAllPosts(data))
+      .then((data) => setJournalismWorks(data))
       .catch(console.error);
   }, []);
 
-  console.log({allPostsData})
+  console.log({journalismWorks})
 
   return (
     <PageContainer className="journalism">
-      {JOURNALISM.map((p) =>
-        <WritingItem
-          writing={p}
-        />
-      )}
-      {/* {allPostsData ?
-        allPostsData.map((p,i) => (
-          <div key={i}>{p.title}</div>
-        ))
-      : null} */}
+
+      {journalismWorks ?
+        journalismWorks.map((p, i) =>
+          <WritingItem
+            key={i}
+            writing={p}
+          />
+        )
+      : null}
+
     </PageContainer>
   )
 

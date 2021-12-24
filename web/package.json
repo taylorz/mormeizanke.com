@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.5.0",
+    "@sanity/block-content-to-react": "^3.0.0",
     "hamburger-react": "^2.2.0",
     "react": "^16.10.2",
     "react-div-100vh": "^0.6.0",
