@@ -1,7 +1,7 @@
 import React, { useEffect, useState  } from 'react';
-import './Journalism.scss';
 import sanityClient from '../../client'
 
+import './Journalism.scss';
 import PageContainer from '../../components/PageContainer/PageContainer';
 import WritingItem from '../../components/WritingItem/WritingItem';
 
@@ -26,8 +26,6 @@ const Journalism = () => {
       .then((data) => setJournalismWorks(data))
       .catch(console.error);
   }, []);
-
-  console.log({journalismWorks})
 
   return (
     <PageContainer className="journalism">
