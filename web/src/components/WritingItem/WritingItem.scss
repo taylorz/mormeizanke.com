@@ -21,6 +21,9 @@
     line-height: $lineHeight;
     // color: $fontColorLight;
     margin-top: $buffer*2;
+    p {
+      margin: 0;
+    }
   }
   .year {
     margin-right: $buffer*4;
