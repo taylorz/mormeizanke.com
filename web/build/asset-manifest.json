@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bbb3beaa.chunk.css",
+    "main.js": "/static/js/main.04b3a8dc.chunk.js",
+    "main.js.map": "/static/js/main.04b3a8dc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f2113ffe.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f2113ffe.js.map",
+    "static/js/2.1667c070.chunk.js": "/static/js/2.1667c070.chunk.js",
+    "static/js/2.1667c070.chunk.js.map": "/static/js/2.1667c070.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.0ae4cfd9f7652891e857e2c13d981bbc.js": "/precache-manifest.0ae4cfd9f7652891e857e2c13d981bbc.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.bbb3beaa.chunk.css.map": "/static/css/main.bbb3beaa.chunk.css.map",
+    "static/media/Audio.scss": "/static/media/GT-Walsheim-Medium.cce416dd.woff",
+    "static/media/HHR2.pdf": "/static/media/HHR2.126e4c04.pdf",
+    "static/media/NewForum_OnceManyTimes.pdf": "/static/media/NewForum_OnceManyTimes.5415eb4d.pdf",
+    "static/media/NewForum_Rabbit.pdf": "/static/media/NewForum_Rabbit.b1c91c0e.pdf",
+    "static/media/RamonStory.pdf": "/static/media/RamonStory.b7de702b.pdf",
+    "static/media/SopronStory.pdf": "/static/media/SopronStory.7599ea11.pdf",
+    "static/media/creativity-calls.JPG": "/static/media/creativity-calls.140a60b3.JPG",
+    "static/media/mormei-headshot.png": "/static/media/mormei-headshot.55e713bb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f2113ffe.js",
+    "static/js/2.1667c070.chunk.js",
+    "static/css/main.bbb3beaa.chunk.css",
+    "static/js/main.04b3a8dc.chunk.js"
+  ]
+}

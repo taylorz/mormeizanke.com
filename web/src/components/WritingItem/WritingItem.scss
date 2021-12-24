@@ -1,0 +1,54 @@
+@import "../../styles/styles.scss";
+
+.writing-item {
+  margin-bottom: $lineHeightStatement;
+  &:hover {
+    .favorite {
+      color: lavender;
+      margin-left: $buffer*8;
+      @include transitionCubic;
+    }
+  }
+  .title {
+    font-size: $fontSizeStatement;
+    line-height: $lineHeightStatement;
+    p {
+      margin: 0;
+    }
+  }
+  .description {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    // color: $fontColorLight;
+    margin-top: $buffer*2;
+    p {
+      margin: 0;
+    }
+  }
+  .year {
+    margin-right: $buffer*4;
+  }
+  .publication {
+    font-style: italic;
+  }
+  .favorite {
+    @include transitionCubic;
+    color: $sunshine;
+    margin-left: $buffer*8;
+    @include breakpoint(xs) {
+      margin: 0;
+    }
+  }
+  .excerpt {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    // color: $fontColorLight;
+    margin-top: $buffer*2;
+  }
+  .statement {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    // color: $fontColorLight;
+    margin-top: $buffer*2;
+  }
+}
