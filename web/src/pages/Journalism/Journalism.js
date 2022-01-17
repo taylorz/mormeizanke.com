@@ -13,7 +13,7 @@ const Journalism = () => {
       .fetch(
         `
           *[_type == "work" && references(*[_type=="category" && title == 'Journalism']._id)
-          ] | order(year desc) { ..., publication-> }
+          ] | order(year desc, month desc) { ..., publication-> }
           {
             title,
             link,

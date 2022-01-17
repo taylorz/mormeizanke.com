@@ -13,7 +13,7 @@ const Poetry = () => {
       .fetch(
         `
           *[_type == "work" && references(*[_type=="category" && title == 'Poetry']._id)
-          ] | order(year desc) { ..., publication-> }
+          ] | order(year desc, month desc) { ..., publication-> }
           {
             title,
             link,
