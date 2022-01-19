@@ -17,6 +17,7 @@ const Poetry = () => {
           {
             title,
             link,
+            "pdfURL": pdf.asset->url,
             year,
             description,
             publication

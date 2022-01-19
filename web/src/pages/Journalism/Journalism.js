@@ -17,6 +17,7 @@ const Journalism = () => {
           {
             title,
             link,
+            "pdfURL": pdf.asset->url,
             year,
             description,
             publication

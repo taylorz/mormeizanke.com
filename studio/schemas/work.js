@@ -19,6 +19,11 @@ export default {
       type: 'string'
     },
     {
+      name: 'pdf',
+      title: 'PDF',
+      type: 'file'
+    },
+    {
       name: 'publication',
       title: 'Publication',
       type: 'reference',

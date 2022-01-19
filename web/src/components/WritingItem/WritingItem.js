@@ -5,8 +5,10 @@ import './WritingItem.scss'
 import Grid from '@material-ui/core/Grid';
 import Text from '../Text/Text';
 
-const WritingItem = ({ writing }) => (
-    <a href={writing.link} target="_blank">
+const WritingItem = ({ writing }) => {
+
+  return (
+    <a href={writing.pdfURL ? `${writing.pdfURL}` : writing.link} target="_blank">
         <Grid container className="writing-item">
             <Grid item xs={2} sm={2} md={1}><Text inline className="year">{writing.year}</Text></Grid>
             <Grid item xs={10} sm={10}>
@@ -30,6 +32,8 @@ const WritingItem = ({ writing }) => (
             </Grid>
         </Grid>
     </a>
-)
+  )
+}
+
 
 export default WritingItem
