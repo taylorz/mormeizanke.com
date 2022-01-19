@@ -8,7 +8,7 @@ const Contact = () => (
     <Grid container>
       <Grid item>
         <div>Email mormeizanke@gmail.com</div>
-        <div>Instagram<a href="https://www.instagram.com/mormeizanke/" target="_blank"> @mormeizanke</a></div>
+        <div>Twitter<a href="https://twitter.com/MormeiZ" target="_blank"> @MormeiZ</a></div>
       </Grid>
     </Grid>
   </PageContainer>
